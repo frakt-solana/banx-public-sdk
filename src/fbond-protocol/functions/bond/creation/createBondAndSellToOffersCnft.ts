@@ -1,0 +1,231 @@
+import { BN, web3 } from '@project-serum/anchor';
+import { mapProof, decode } from '../../../helpers';
+import {
+  BUBBLEGUM_PROGRAM_ID,
+  SPL_ACCOUNT_COMPRESSION_PROGRAM_ID,
+  SPL_NOOP_PROGRAM_ID,
+  ENCODER,
+} from '../../../constants';
+
+import {
+  BOND_PROOGRAM_AUTHORITY_PREFIX,
+  COLLATERAL_BOX_PREFIX,
+  MUTUAL_BOND_TRADE_TXN_VAULT,
+  HADOMARKET_REGISTRY_PREFIX,
+  AUTOCOMPOUND_DEPOSIT_PREFIX,
+} from '../../../constants';
+
+import { returnAnchorProgram } from '../../../helpers';
+import { SellBondParamsAndAccounts } from '../repayment';
+
+export interface CnftParams {
+  dataHash: string;
+  creatorHash: string;
+  leafId: number;
+  tree?: string;
+}
+
+type CreateBondAndSellToOffersCnft = (params: {
+  programId: web3.PublicKey;
+  connection: web3.Connection;
+
+  args: {
+    sellBondParamsAndAccounts: SellBondParamsAndAccounts[];
+    cnftParams: CnftParams;
+    proof: any;
+  };
+  addComputeUnits?: boolean;
+
+  accounts: {
+    fraktMarket: web3.PublicKey;
+    oracleFloor: web3.PublicKey;
+
+    whitelistEntry: web3.PublicKey;
+    hadoMarket: web3.PublicKey;
+
+    userPubkey: web3.PublicKey;
+    protocolFeeReceiver: web3.PublicKey;
+    tree: web3.PublicKey;
+    nftMint: web3.PublicKey;
+  };
+
+  sendTxn: (transaction: web3.Transaction, signers: web3.Signer[]) => Promise<void>;
+}) => Promise<{
+  fbond: web3.PublicKey;
+  fbondTokenMint: web3.PublicKey;
+  collateralBox: web3.PublicKey;
+  bondProgramAuthority: web3.PublicKey;
+  instructions: web3.TransactionInstruction[];
+  signers: web3.Signer[];
+  addressesForLookupTable: web3.PublicKey[];
+}>;
+
+export const createBondAndSellToOffersCnft: CreateBondAndSellToOffersCnft = async ({
+  programId,
+  connection,
+  args,
+  addComputeUnits,
+  accounts,
+  sendTxn,
+}) => {
+  const program = returnAnchorProgram(programId, connection);
+  const instructions: web3.TransactionInstruction[] = [];
+  const fbond = web3.Keypair.generate();
+
+  const [treeAuthority, _bump2] = web3.PublicKey.findProgramAddressSync(
+    [accounts.tree.toBuffer()],
+    BUBBLEGUM_PROGRAM_ID,
+  );
+
+  const proofPathAsAccounts = mapProof(args.proof);
+
+  const root = decode(args.proof.root);
+  const dataHash = decode(args.cnftParams.dataHash);
+  const creatorHash = decode(args.cnftParams.creatorHash);
+  const nonce = new BN(args.cnftParams.leafId);
+  const index = args.cnftParams.leafId;
+
+  const [bondProgramAuthority] = await web3.PublicKey.findProgramAddress(
+    [ENCODER.encode(BOND_PROOGRAM_AUTHORITY_PREFIX), fbond.publicKey.toBuffer()],
+    program.programId,
+  );
+
+  const [collateralBox] = await web3.PublicKey.findProgramAddress(
+    [ENCODER.encode(COLLATERAL_BOX_PREFIX), fbond.publicKey.toBuffer(), ENCODER.encode('0')],
+    program.programId,
+  );
+
+  const [mutualBondTradeTxnVault] = await web3.PublicKey.findProgramAddress(
+    [ENCODER.encode(MUTUAL_BOND_TRADE_TXN_VAULT)],
+    program.programId,
+  );
+
+  const [hadoRegistry, registrySeed] = await web3.PublicKey.findProgramAddress(
+    [ENCODER.encode(HADOMARKET_REGISTRY_PREFIX), accounts.hadoMarket.toBuffer()],
+    program.programId,
+  );
+
+  const sellBondParams = await Promise.all(
+    args.sellBondParamsAndAccounts.map(async (sellBondParamsAndAccount) => {
+      const [bondTradeTransactionV2, bondTradeTransactionV2Bump] = await web3.PublicKey.findProgramAddress(
+        [
+          ENCODER.encode(AUTOCOMPOUND_DEPOSIT_PREFIX),
+          fbond.publicKey.toBuffer(),
+          sellBondParamsAndAccount.bondOfferV2.toBuffer(),
+          ENCODER.encode(sellBondParamsAndAccount.minAmountToGet.toString()),
+          ENCODER.encode(sellBondParamsAndAccount.amountToSell.toString()),
+        ],
+        program.programId,
+      );
+      return {
+        minAmountToGet: new BN(sellBondParamsAndAccount.minAmountToGet),
+        amountToSell: new BN(sellBondParamsAndAccount.amountToSell),
+        bondTradeTransactionV2Bump: bondTradeTransactionV2Bump,
+      };
+    }),
+  );
+
+  const sellBondRemainingAccounts = (
+    await Promise.all(
+      args.sellBondParamsAndAccounts.map(async (sellBondParamsAndAccount) => {
+        const [bondTradeTransactionV2, bondTradeTransactionV2Bump] = await web3.PublicKey.findProgramAddress(
+          [
+            ENCODER.encode(AUTOCOMPOUND_DEPOSIT_PREFIX),
+            fbond.publicKey.toBuffer(),
+            sellBondParamsAndAccount.bondOfferV2.toBuffer(),
+            ENCODER.encode(sellBondParamsAndAccount.minAmountToGet.toString()),
+            ENCODER.encode(sellBondParamsAndAccount.amountToSell.toString()),
+          ],
+          program.programId,
+        );
+        // console.log('bondTradeTransactionV2: ', bondTradeTransactionV2.toBase58());
+
+        return [
+          {
+            pubkey: sellBondParamsAndAccount.bondOfferV2,
+            isSigner: false,
+            isWritable: true,
+          },
+          {
+            pubkey: bondTradeTransactionV2,
+            isSigner: false,
+            isWritable: true,
+          },
+        ];
+      }),
+    )
+  ).flat();
+
+  const modifyComputeUnits = web3.ComputeBudgetProgram.setComputeUnitLimit({
+    units: Math.round(800000 + Math.ceil(Math.random() * 10000)),
+  });
+  const requestHeap = web3.ComputeBudgetProgram.requestHeapFrame({ bytes: 1024 * 250 });
+  instructions.push(requestHeap);
+
+  if (!!addComputeUnits) instructions.push(modifyComputeUnits);
+
+  const accountsIntoInstruction = {
+    fbond: fbond.publicKey,
+
+    user: accounts.userPubkey,
+
+    hadoRegistry: hadoRegistry,
+    hadoMarket: accounts.hadoMarket,
+
+    oracleFloor: accounts.oracleFloor,
+
+    whitelistEntry: accounts.whitelistEntry,
+    mutualBondTradeTxnVault: mutualBondTradeTxnVault,
+
+    protocolFeeReceiver: accounts.protocolFeeReceiver,
+
+    collateralBox: collateralBox,
+
+    systemProgram: web3.SystemProgram.programId,
+    rent: web3.SYSVAR_RENT_PUBKEY,
+
+    merkleTree: accounts.tree,
+    treeAuthority: treeAuthority,
+    bubblegumProgram: BUBBLEGUM_PROGRAM_ID,
+    compressionProgram: SPL_ACCOUNT_COMPRESSION_PROGRAM_ID,
+    logWrapper: SPL_NOOP_PROGRAM_ID,
+    nftMint: accounts.nftMint,
+  };
+
+  const createAndSellBondRemainingAccounts = [...sellBondRemainingAccounts, ...proofPathAsAccounts];
+
+  instructions.push(
+    await program.methods
+      .createBondAndSellToOffersCnft(
+        sellBondParams,
+        root,
+        dataHash,
+        creatorHash,
+        nonce,
+        index,
+        proofPathAsAccounts.length,
+      )
+      .accountsStrict(accountsIntoInstruction)
+      .remainingAccounts(createAndSellBondRemainingAccounts)
+      .instruction(),
+  );
+  const addressesForLookupTable = [
+    ...Object.values(accountsIntoInstruction),
+    ...Array.from(createAndSellBondRemainingAccounts, (x) => x.pubkey),
+  ];
+
+  const transaction = new web3.Transaction();
+  for (let instruction of instructions) transaction.add(instruction);
+
+  const signers = [fbond];
+  await sendTxn(transaction, signers);
+  return {
+    fbond: fbond.publicKey,
+    fbondTokenMint: fbond.publicKey,
+    collateralBox: collateralBox,
+    bondProgramAuthority,
+    instructions,
+    signers,
+    addressesForLookupTable,
+  };
+};

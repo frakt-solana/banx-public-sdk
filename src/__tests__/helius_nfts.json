@@ -1,0 +1,805 @@
+{
+  "totalResults": 14,
+  "results": [
+    {
+      "interface": "Custom",
+      "id": "B63jZXivwGW9w7e3xBPPkkLXfJPoJCZVQTtmsHQ9n2ZE",
+      "content": {
+        "$schema": "https://schema.metaplex.com/nft1.0.json",
+        "json_uri": "https://assets.meegos.io/0.json",
+        "files": [],
+        "metadata": { "name": "Ogeem #1486", "symbol": "MEE" },
+        "links": {}
+      },
+      "authorities": [{ "address": "DnCrghyVqZCzYnsTB5Bq7KhpgEGUNBvdYMT2UVZxqyoL", "scopes": ["full"] }],
+      "compression": {
+        "eligible": false,
+        "compressed": false,
+        "data_hash": "",
+        "creator_hash": "",
+        "asset_hash": "",
+        "tree": "",
+        "seq": 0,
+        "leaf_id": 0
+      },
+      "grouping": [{ "group_key": "collection", "group_value": "31rsXKLS65UmnH2P3z2GCyAZvf8cbtt6uGEDQuexzHEv" }],
+      "royalty": {
+        "royalty_model": "creators",
+        "target": null,
+        "percent": 0.0444,
+        "basis_points": 444,
+        "primary_sale_happened": true,
+        "locked": false
+      },
+      "creators": [
+        { "address": "EowsCmwzsCdziPGW3HpPDjp3frWYoC61GuKJ9rHKoSZ5", "share": 0, "verified": true },
+        { "address": "DnCrghyVqZCzYnsTB5Bq7KhpgEGUNBvdYMT2UVZxqyoL", "share": 100, "verified": false }
+      ],
+      "ownership": {
+        "frozen": false,
+        "delegated": false,
+        "delegate": null,
+        "ownership_model": "single",
+        "owner": "CJjH2qE3dUb5CdmvhvECpkTfJTsFPgieToUn1wdNSHgF"
+      },
+      "supply": null,
+      "mutable": true,
+      "burnt": false
+    },
+    {
+      "interface": "Custom",
+      "id": "3sib3mnjmza427qh7hczHzM8AyWecjtNVSkpdP6rGGze",
+      "content": {
+        "$schema": "https://schema.metaplex.com/nft1.0.json",
+        "json_uri": "https://assets.meegos.io/0.json",
+        "files": [],
+        "metadata": { "name": "Ogeem #1951", "symbol": "MEE" },
+        "links": {}
+      },
+      "authorities": [{ "address": "DnCrghyVqZCzYnsTB5Bq7KhpgEGUNBvdYMT2UVZxqyoL", "scopes": ["full"] }],
+      "compression": {
+        "eligible": false,
+        "compressed": false,
+        "data_hash": "",
+        "creator_hash": "",
+        "asset_hash": "",
+        "tree": "",
+        "seq": 0,
+        "leaf_id": 0
+      },
+      "grouping": [{ "group_key": "collection", "group_value": "31rsXKLS65UmnH2P3z2GCyAZvf8cbtt6uGEDQuexzHEv" }],
+      "royalty": {
+        "royalty_model": "creators",
+        "target": null,
+        "percent": 0.0444,
+        "basis_points": 444,
+        "primary_sale_happened": true,
+        "locked": false
+      },
+      "creators": [
+        { "address": "EowsCmwzsCdziPGW3HpPDjp3frWYoC61GuKJ9rHKoSZ5", "share": 0, "verified": true },
+        { "address": "DnCrghyVqZCzYnsTB5Bq7KhpgEGUNBvdYMT2UVZxqyoL", "share": 100, "verified": false }
+      ],
+      "ownership": {
+        "frozen": false,
+        "delegated": false,
+        "delegate": null,
+        "ownership_model": "single",
+        "owner": "CJjH2qE3dUb5CdmvhvECpkTfJTsFPgieToUn1wdNSHgF"
+      },
+      "supply": null,
+      "mutable": true,
+      "burnt": false
+    },
+    {
+      "interface": "Custom",
+      "id": "4ZSYLEH84gVm1auRXj3m5mWQn86KLt7kNazz8ro51seR",
+      "content": {
+        "$schema": "https://schema.metaplex.com/nft1.0.json",
+        "json_uri": "https://assets.meegos.io/0.json",
+        "files": [],
+        "metadata": { "name": "Ogeem #4343", "symbol": "MEE" },
+        "links": {}
+      },
+      "authorities": [{ "address": "DnCrghyVqZCzYnsTB5Bq7KhpgEGUNBvdYMT2UVZxqyoL", "scopes": ["full"] }],
+      "compression": {
+        "eligible": false,
+        "compressed": false,
+        "data_hash": "",
+        "creator_hash": "",
+        "asset_hash": "",
+        "tree": "",
+        "seq": 0,
+        "leaf_id": 0
+      },
+      "grouping": [{ "group_key": "collection", "group_value": "31rsXKLS65UmnH2P3z2GCyAZvf8cbtt6uGEDQuexzHEv" }],
+      "royalty": {
+        "royalty_model": "creators",
+        "target": null,
+        "percent": 0.0444,
+        "basis_points": 444,
+        "primary_sale_happened": true,
+        "locked": false
+      },
+      "creators": [
+        { "address": "EowsCmwzsCdziPGW3HpPDjp3frWYoC61GuKJ9rHKoSZ5", "share": 0, "verified": true },
+        { "address": "DnCrghyVqZCzYnsTB5Bq7KhpgEGUNBvdYMT2UVZxqyoL", "share": 100, "verified": false }
+      ],
+      "ownership": {
+        "frozen": true,
+        "delegated": false,
+        "delegate": null,
+        "ownership_model": "single",
+        "owner": "CJjH2qE3dUb5CdmvhvECpkTfJTsFPgieToUn1wdNSHgF"
+      },
+      "supply": null,
+      "mutable": true,
+      "burnt": false
+    },
+    {
+      "interface": "Custom",
+      "id": "7SYhqRvuuiK89xoK7fvJSH6ZGqcETCZnyLvKcVNyogs8",
+      "content": {
+        "$schema": "https://schema.metaplex.com/nft1.0.json",
+        "json_uri": "https://assets.meegos.io/0.json",
+        "files": [],
+        "metadata": { "name": "Ogeem #1541", "symbol": "MEE" },
+        "links": {}
+      },
+      "authorities": [{ "address": "DnCrghyVqZCzYnsTB5Bq7KhpgEGUNBvdYMT2UVZxqyoL", "scopes": ["full"] }],
+      "compression": {
+        "eligible": false,
+        "compressed": false,
+        "data_hash": "",
+        "creator_hash": "",
+        "asset_hash": "",
+        "tree": "",
+        "seq": 0,
+        "leaf_id": 0
+      },
+      "grouping": [{ "group_key": "collection", "group_value": "31rsXKLS65UmnH2P3z2GCyAZvf8cbtt6uGEDQuexzHEv" }],
+      "royalty": {
+        "royalty_model": "creators",
+        "target": null,
+        "percent": 0.0444,
+        "basis_points": 444,
+        "primary_sale_happened": true,
+        "locked": false
+      },
+      "creators": [
+        { "address": "EowsCmwzsCdziPGW3HpPDjp3frWYoC61GuKJ9rHKoSZ5", "share": 0, "verified": true },
+        { "address": "DnCrghyVqZCzYnsTB5Bq7KhpgEGUNBvdYMT2UVZxqyoL", "share": 100, "verified": false }
+      ],
+      "ownership": {
+        "frozen": true,
+        "delegated": false,
+        "delegate": null,
+        "ownership_model": "single",
+        "owner": "CJjH2qE3dUb5CdmvhvECpkTfJTsFPgieToUn1wdNSHgF"
+      },
+      "supply": null,
+      "mutable": true,
+      "burnt": false
+    },
+    {
+      "interface": "Custom",
+      "id": "H8ZrFhcPVkFLpksEmBV2qWm62QpdvgXm4NLv56nqmtjJ",
+      "content": {
+        "$schema": "https://schema.metaplex.com/nft1.0.json",
+        "json_uri": "https://assets.meegos.io/0.json",
+        "files": [],
+        "metadata": { "name": "Ogeem #4599", "symbol": "MEE" },
+        "links": {}
+      },
+      "authorities": [{ "address": "DnCrghyVqZCzYnsTB5Bq7KhpgEGUNBvdYMT2UVZxqyoL", "scopes": ["full"] }],
+      "compression": {
+        "eligible": false,
+        "compressed": false,
+        "data_hash": "",
+        "creator_hash": "",
+        "asset_hash": "",
+        "tree": "",
+        "seq": 0,
+        "leaf_id": 0
+      },
+      "grouping": [{ "group_key": "collection", "group_value": "31rsXKLS65UmnH2P3z2GCyAZvf8cbtt6uGEDQuexzHEv" }],
+      "royalty": {
+        "royalty_model": "creators",
+        "target": null,
+        "percent": 0.0444,
+        "basis_points": 444,
+        "primary_sale_happened": true,
+        "locked": false
+      },
+      "creators": [
+        { "address": "EowsCmwzsCdziPGW3HpPDjp3frWYoC61GuKJ9rHKoSZ5", "share": 0, "verified": true },
+        { "address": "DnCrghyVqZCzYnsTB5Bq7KhpgEGUNBvdYMT2UVZxqyoL", "share": 100, "verified": false }
+      ],
+      "ownership": {
+        "frozen": true,
+        "delegated": false,
+        "delegate": null,
+        "ownership_model": "single",
+        "owner": "CJjH2qE3dUb5CdmvhvECpkTfJTsFPgieToUn1wdNSHgF"
+      },
+      "supply": null,
+      "mutable": true,
+      "burnt": false
+    },
+    {
+      "interface": "V1_NFT",
+      "id": "9yePcTye9CPJdtChMkaeEGUTbRhx5yoRBLnYFQJuc9Pt",
+      "content": {
+        "$schema": "https://schema.metaplex.com/nft1.0.json",
+        "json_uri": "https://s3.us-east-1.amazonaws.com/brma/v8taD13VVWSM5yuaXdla",
+        "files": [
+          {
+            "uri": "https://s3.us-east-1.amazonaws.com/brma/bpKl80276NBG0S5XP1BE",
+            "cdn_uri": "https://cdn.helius-rpc.com/cdn-cgi/image//https://s3.us-east-1.amazonaws.com/brma/bpKl80276NBG0S5XP1BE",
+            "mime": "image/png"
+          }
+        ],
+        "metadata": {
+          "attributes": [
+            { "value": "Bagel", "trait_type": "Maze" },
+            { "value": "Bread", "trait_type": "Player" },
+            { "value": "60", "trait_type": "Size" },
+            {
+              "value": "[[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0], [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0], [0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0], [0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0], [0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0], [0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0], [0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0], [0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0], [0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0], [0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0], [0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0], [0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0], [0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0], [0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0], [0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0], [0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0], [0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0], [0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0], [0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0], [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0], [0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0], [0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0], [0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0], [0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0], [0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0], [0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0], [0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0], [0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0], [0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0], [0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0], [0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0], [0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0], [0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0], [0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0], [0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0], [0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0], [0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0], [0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0], [0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0], [0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0], [0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0], [0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0], [0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0], [0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0], [0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0], [0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0], [0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0], [0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0], [0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0], [0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0], [0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0], [0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0], [0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0], [0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 1, 0, 1, 0, 1, 0, 0, 0], [0, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0, 1, 0], [0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0, 1, 0, 0, 0, 0, 0, 1, 0, 1, 0], [0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 0, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 0], [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]]",
+              "trait_type": "Map"
+            },
+            { "value": "b0f0c2939938a996a96475d6a66b8329f8873f12bf71aae19b4234b539b79", "trait_type": "Solution" }
+          ],
+          "description": "Solve the Bread Head's maze challenge for the chance to win a prize! Powered by 3mail.",
+          "name": "Gaming Challenge: Maze #1650",
+          "symbol": ""
+        },
+        "links": {
+          "image": "https://s3.us-east-1.amazonaws.com/brma/bpKl80276NBG0S5XP1BE",
+          "external_url": "https://maze.breadheads.io"
+        }
+      },
+      "authorities": [{ "address": "5gBixaobuJZBEJRPoEQ46QysMoQZBgq8PzcBMLHsYNCe", "scopes": ["full"] }],
+      "compression": {
+        "eligible": false,
+        "compressed": true,
+        "data_hash": "C2c4Si5qjCV66BaWtL9c5SDZQt96bQ6yxY3CTyC77jK7",
+        "creator_hash": "8aqEDeCYqbCLkuwYxQBfsLnAohYhj1CFWMeNtTSJPgMy",
+        "asset_hash": "J9kQkgTtrxYr8HwRnTX2B6qR4wGCKZwoKBbYmNehJTK8",
+        "tree": "Xj5sftThEzrmkYqd5zQemRjFotDAPjfKnUkuEMETREc",
+        "seq": 1651,
+        "leaf_id": 1650
+      },
+      "grouping": [{ "group_key": "collection", "group_value": "7AA1QE6pFYchfFaMiSsdnceXrMJ1JSPg42m8EDTKUwbq" }],
+      "royalty": {
+        "royalty_model": "creators",
+        "target": null,
+        "percent": 0.05,
+        "basis_points": 500,
+        "primary_sale_happened": false,
+        "locked": false
+      },
+      "creators": [{ "address": "3AajDgUy6p8cYNr7FUGjN1tsph1PdNdqcp7bHmHVdqsB", "share": 100, "verified": true }],
+      "ownership": {
+        "frozen": false,
+        "delegated": false,
+        "delegate": null,
+        "ownership_model": "single",
+        "owner": "CJjH2qE3dUb5CdmvhvECpkTfJTsFPgieToUn1wdNSHgF"
+      },
+      "supply": { "print_max_supply": 0, "print_current_supply": 0, "edition_nonce": null },
+      "mutable": true,
+      "burnt": false
+    },
+    {
+      "interface": "V1_NFT",
+      "id": "G6vMaExHTSEbZRDN52bko6ZvNpa5mvzakANTLUTfRmN4",
+      "content": {
+        "$schema": "https://schema.metaplex.com/nft1.0.json",
+        "json_uri": "https://nftstorage.link/ipfs/bafkreifmdibxayuw6yctbxnwj6o7ld5qqphn5hhbpy4mbmqvqbvxjzg6k4",
+        "files": [
+          {
+            "uri": "https://nftstorage.link/ipfs/bafybeieebshhwzv24yhwoagsyg7c67sytqvlbr5digvodwczxj3rbgyuxa",
+            "mime": ""
+          }
+        ],
+        "metadata": {
+          "attributes": [],
+          "description": "Step 1: Receive the monthly challenge.\nStep 2: Complete the airdropped challenge to claim your Winner Proof.\nStep 3: Buy or trade NFTs to collection more Winner Proofs.\nStep 4: The player with the most Winner Proofs at the end of the month wins the monthly prize pool!",
+          "name": "Bread Preview #1900",
+          "symbol": ""
+        },
+        "links": {
+          "animation_url": "https://nftstorage.link/ipfs/bafybeieebshhwzv24yhwoagsyg7c67sytqvlbr5digvodwczxj3rbgyuxa",
+          "external_url": "https://breadheads.io"
+        }
+      },
+      "authorities": [{ "address": "3MACdsV1ksSfLL6uirA72u2Fz7SZbDwwKLwFG5EzFVXo", "scopes": ["full"] }],
+      "compression": {
+        "eligible": false,
+        "compressed": true,
+        "data_hash": "FUJ9rEagwNzBj7aReBozDegppeBiPLiB6s5H7jei8HVX",
+        "creator_hash": "8aqEDeCYqbCLkuwYxQBfsLnAohYhj1CFWMeNtTSJPgMy",
+        "asset_hash": "Fa8RKovff8axQ2jhMMDJhZoYEo4H7FYKgPKMXZmjjiHv",
+        "tree": "EhkGc5fjQnMhjhJp5w2nBG6jq4LTLqDsA3Zv41zBp9Q1",
+        "seq": 1903,
+        "leaf_id": 1901
+      },
+      "grouping": [{ "group_key": "collection", "group_value": "BjjpnYLo4j5Nd2sfzA7uiMv7yemucQ4GyAmo6Q2msjN6" }],
+      "royalty": {
+        "royalty_model": "creators",
+        "target": null,
+        "percent": 0.05,
+        "basis_points": 500,
+        "primary_sale_happened": false,
+        "locked": false
+      },
+      "creators": [{ "address": "3AajDgUy6p8cYNr7FUGjN1tsph1PdNdqcp7bHmHVdqsB", "share": 100, "verified": true }],
+      "ownership": {
+        "frozen": false,
+        "delegated": false,
+        "delegate": null,
+        "ownership_model": "single",
+        "owner": "CJjH2qE3dUb5CdmvhvECpkTfJTsFPgieToUn1wdNSHgF"
+      },
+      "supply": { "print_max_supply": 0, "print_current_supply": 0, "edition_nonce": null },
+      "mutable": true,
+      "burnt": false
+    },
+    {
+      "interface": "V1_NFT",
+      "id": "EyphitYrGMePr4ybowixFEdmnjrzg4S6pQ5Eernz9Vrn",
+      "content": {
+        "$schema": "https://schema.metaplex.com/nft1.0.json",
+        "json_uri": "https://cusethejuice.com/cuse-box/assets-cuse-dalle/72.json",
+        "files": [
+          {
+            "uri": "https://cusethejuice.com/cuse-box/assets-cuse-dalle/72.png",
+            "cdn_uri": "https://cdn.helius-rpc.com/cdn-cgi/image//https://cusethejuice.com/cuse-box/assets-cuse-dalle/72.png",
+            "mime": "image/png"
+          }
+        ],
+        "metadata": {
+          "attributes": [
+            { "value": "72", "trait_type": "Id" },
+            { "value": "PESKY PENGUINS", "trait_type": "Airdropped to Holders in Collection" },
+            { "value": "NOOT NOOT", "trait_type": "Rarity" },
+            { "value": "https://www.tensor.trade/trade/cuse_the_juice", "trait_type": "Marketplace" }
+          ],
+          "description": "Solana Compressed NFT Airdrop courtesy of https://twitter.com/CuseTheJuice and OpenAI's DALL-E",
+          "name": "CUSE THE JUICE #72",
+          "symbol": "CTJ"
+        },
+        "links": { "image": "https://cusethejuice.com/cuse-box/assets-cuse-dalle/72.png" }
+      },
+      "authorities": [{ "address": "79ubE8NXmpck5ga7am1tzMKGhiT1kVeQge7UycB3RH8V", "scopes": ["full"] }],
+      "compression": {
+        "eligible": false,
+        "compressed": true,
+        "data_hash": "HmcSzvv3WRT74EZe2merR8guv4ztUqELi3SHzqH9Vqmy",
+        "creator_hash": "4sWCpzB4ot5wUG2AYE4nxA3mvUV3SgbcX5DcqCYo1j4U",
+        "asset_hash": "A5jHNEVFGstpM1A61E8aQEMaRyU29vVHpSVQW3QXoTmh",
+        "tree": "2ixDdFmBqGBy1oyEVNmM3TRMz4jvjuFYPTEBYNhYXZk9",
+        "seq": 56222,
+        "leaf_id": 52536
+      },
+      "grouping": [{ "group_key": "collection", "group_value": "9tr8P95xK3fmgiUSUCckYC9FYBtPwBvbN5u17DttitsU" }],
+      "royalty": {
+        "royalty_model": "creators",
+        "target": null,
+        "percent": 0.042,
+        "basis_points": 420,
+        "primary_sale_happened": false,
+        "locked": false
+      },
+      "creators": [{ "address": "9Ea4Vua2XjED7EJ1f2VJNXqLCaUFRFBVEt3QoL9R43uP", "share": 100, "verified": false }],
+      "ownership": {
+        "frozen": false,
+        "delegated": true,
+        "delegate": "9Ea4Vua2XjED7EJ1f2VJNXqLCaUFRFBVEt3QoL9R43uP",
+        "ownership_model": "single",
+        "owner": "CJjH2qE3dUb5CdmvhvECpkTfJTsFPgieToUn1wdNSHgF"
+      },
+      "supply": { "print_max_supply": 0, "print_current_supply": 0, "edition_nonce": 0 },
+      "mutable": true,
+      "burnt": false
+    },
+    {
+      "interface": "V1_NFT",
+      "id": "2AS7RATcnqSzobWfFKq1zojU6oozJQfhm2ZhUgbvFJt5",
+      "content": {
+        "$schema": "https://schema.metaplex.com/nft1.0.json",
+        "json_uri": "https://cusethejuice.s3.amazonaws.com/cuse-box/assets-cuse-dalle/35.json",
+        "files": [
+          {
+            "uri": "https://cusethejuice.s3.amazonaws.com/cuse-box/assets-cuse-dalle/35.png",
+            "cdn_uri": "https://cdn.helius-rpc.com/cdn-cgi/image//https://cusethejuice.s3.amazonaws.com/cuse-box/assets-cuse-dalle/35.png",
+            "mime": "image/png"
+          }
+        ],
+        "metadata": {
+          "attributes": [
+            { "value": "35", "trait_type": "Id" },
+            { "value": "FAMOUS FOX FEDERATION", "trait_type": "Airdropped to Collection" },
+            { "value": "02 July 2023", "trait_type": "Wallet Snapshot" },
+            { "value": "Uncommon", "trait_type": "Rarity" },
+            { "value": "https://www.tensor.trade/trade/cuse_the_juice", "trait_type": "Trade on Tensor" },
+            { "value": "https://twitter.com/CuseTheJuice and OpenAI's DALL-E", "trait_type": "Courtesy of" }
+          ],
+          "description": "Solana Compressed NFT Airdrop for FAMOUS FOX FEDERATION Collection courtesy of https://twitter.com/CuseTheJuice and OpenAI's DALL-E",
+          "name": "CUSE THE JUICE #35",
+          "symbol": "CTJ"
+        },
+        "links": { "image": "https://cusethejuice.s3.amazonaws.com/cuse-box/assets-cuse-dalle/35.png" }
+      },
+      "authorities": [{ "address": "79ubE8NXmpck5ga7am1tzMKGhiT1kVeQge7UycB3RH8V", "scopes": ["full"] }],
+      "compression": {
+        "eligible": false,
+        "compressed": true,
+        "data_hash": "FmGUpoZR6oWpjvR4MuvZHHvKECTL297XFm2ZfrjEgn6B",
+        "creator_hash": "4sWCpzB4ot5wUG2AYE4nxA3mvUV3SgbcX5DcqCYo1j4U",
+        "asset_hash": "J7h3RxjCqc571dzLwxeDm4Z24HWghNkAQEnB5XyfgScc",
+        "tree": "2ixDdFmBqGBy1oyEVNmM3TRMz4jvjuFYPTEBYNhYXZk9",
+        "seq": 13423,
+        "leaf_id": 12877
+      },
+      "grouping": [{ "group_key": "collection", "group_value": "9tr8P95xK3fmgiUSUCckYC9FYBtPwBvbN5u17DttitsU" }],
+      "royalty": {
+        "royalty_model": "creators",
+        "target": null,
+        "percent": 0.042,
+        "basis_points": 420,
+        "primary_sale_happened": false,
+        "locked": false
+      },
+      "creators": [{ "address": "9Ea4Vua2XjED7EJ1f2VJNXqLCaUFRFBVEt3QoL9R43uP", "share": 100, "verified": false }],
+      "ownership": {
+        "frozen": false,
+        "delegated": true,
+        "delegate": "9Ea4Vua2XjED7EJ1f2VJNXqLCaUFRFBVEt3QoL9R43uP",
+        "ownership_model": "single",
+        "owner": "CJjH2qE3dUb5CdmvhvECpkTfJTsFPgieToUn1wdNSHgF"
+      },
+      "supply": { "print_max_supply": 0, "print_current_supply": 0, "edition_nonce": 0 },
+      "mutable": true,
+      "burnt": false
+    },
+    {
+      "interface": "Custom",
+      "id": "BhjoLWG2APLtNZUFVjrh627srMPwdao5uMXcUPD9r2qv",
+      "content": {
+        "$schema": "https://schema.metaplex.com/nft1.0.json",
+        "json_uri": "https://banxnft.s3.amazonaws.com/json/1288.json",
+        "files": [
+          {
+            "uri": "https://banxnft.s3.amazonaws.com/images/1288.png",
+            "cdn_uri": "https://cdn.helius-rpc.com/cdn-cgi/image//https://banxnft.s3.amazonaws.com/images/1288.png",
+            "mime": "image/png"
+          }
+        ],
+        "metadata": {
+          "attributes": [
+            { "value": "1", "trait_type": "player points" },
+            { "value": "63", "trait_type": "partner points" },
+            { "value": "Gray", "trait_type": "Background" },
+            { "value": "Sun", "trait_type": "Fur" },
+            { "value": "Bored", "trait_type": "Mouth" },
+            { "value": "Heart glasses", "trait_type": "Eyes" },
+            { "value": "None", "trait_type": "Head" },
+            { "value": "Solana t-shirt", "trait_type": "Body" },
+            { "value": "Epic", "trait_type": "Tier" }
+          ],
+          "description": "Banx is the frakt protocol's collection. Each Banx unlocks a share of revenue and governance proportional to its Partner points. Every Banx makes you a first-class user of the protocol, with discounts and boosts proportional to its Player points. Art by Tainaker, Utility by frakt, Community by you.",
+          "name": "Banx #1288",
+          "symbol": "BANX"
+        },
+        "links": { "image": "https://banxnft.s3.amazonaws.com/images/1288.png", "external_url": "https://frakt.xyz" }
+      },
+      "authorities": [{ "address": "AYqVSa7zbAatGJ4MGbJsVQSrmLT2PqVMMihGyv6sRSXP", "scopes": ["full"] }],
+      "compression": {
+        "eligible": false,
+        "compressed": false,
+        "data_hash": "",
+        "creator_hash": "",
+        "asset_hash": "",
+        "tree": "",
+        "seq": 0,
+        "leaf_id": 0
+      },
+      "grouping": [{ "group_key": "collection", "group_value": "5tz9iHWWHr5PRQYPzLPvUMKXFCmPNPfdx5u4cha2Gj8T" }],
+      "royalty": {
+        "royalty_model": "creators",
+        "target": null,
+        "percent": 0.042,
+        "basis_points": 420,
+        "primary_sale_happened": true,
+        "locked": false
+      },
+      "creators": [
+        { "address": "BHexcGVJbpbk1DCJfT8GJph7wYiFTiMc3iTVc6ACP99W", "share": 0, "verified": true },
+        { "address": "bnxZZLyvcezhYxRzBwdw7duK9Q9DN26Jd9YZhizTnwg", "share": 100, "verified": false }
+      ],
+      "ownership": {
+        "frozen": true,
+        "delegated": true,
+        "delegate": "FoNprxYzYmwnYzhM964CxEHchhj17YREieJtSAXg9FMU",
+        "ownership_model": "single",
+        "owner": "CJjH2qE3dUb5CdmvhvECpkTfJTsFPgieToUn1wdNSHgF"
+      },
+      "supply": null,
+      "mutable": true,
+      "burnt": false
+    },
+    {
+      "interface": "Custom",
+      "id": "CrxGhCDhLktnuywtR8V6zYJq7tCbrtmgXVJczc3xph7e",
+      "content": {
+        "$schema": "https://schema.metaplex.com/nft1.0.json",
+        "json_uri": "https://banxnft.s3.amazonaws.com/json/5799.json",
+        "files": [
+          {
+            "uri": "https://banxnft.s3.amazonaws.com/images/5799.png",
+            "cdn_uri": "https://cdn.helius-rpc.com/cdn-cgi/image//https://banxnft.s3.amazonaws.com/images/5799.png",
+            "mime": "image/png"
+          }
+        ],
+        "metadata": {
+          "attributes": [
+            { "value": "1", "trait_type": "player points" },
+            { "value": "63", "trait_type": "partner points" },
+            { "value": "Yellow", "trait_type": "Background" },
+            { "value": "Green", "trait_type": "Fur" },
+            { "value": "Laugh", "trait_type": "Mouth" },
+            { "value": "Trippy", "trait_type": "Eyes" },
+            { "value": "Bucket hat (Yellow)", "trait_type": "Head" },
+            { "value": "Denim jacket", "trait_type": "Body" },
+            { "value": "Uncommon", "trait_type": "Tier" }
+          ],
+          "description": "Banx is the frakt protocol's collection. Each Banx unlocks a share of revenue and governance proportional to its Partner points. Every Banx makes you a first-class user of the protocol, with discounts and boosts proportional to its Player points. Art by Tainaker, Utility by frakt, Community by you.",
+          "name": "Banx #5799",
+          "symbol": "BANX"
+        },
+        "links": { "image": "https://banxnft.s3.amazonaws.com/images/5799.png", "external_url": "https://frakt.xyz" }
+      },
+      "authorities": [{ "address": "AYqVSa7zbAatGJ4MGbJsVQSrmLT2PqVMMihGyv6sRSXP", "scopes": ["full"] }],
+      "compression": {
+        "eligible": false,
+        "compressed": false,
+        "data_hash": "",
+        "creator_hash": "",
+        "asset_hash": "",
+        "tree": "",
+        "seq": 0,
+        "leaf_id": 0
+      },
+      "grouping": [{ "group_key": "collection", "group_value": "5tz9iHWWHr5PRQYPzLPvUMKXFCmPNPfdx5u4cha2Gj8T" }],
+      "royalty": {
+        "royalty_model": "creators",
+        "target": null,
+        "percent": 0.042,
+        "basis_points": 420,
+        "primary_sale_happened": true,
+        "locked": false
+      },
+      "creators": [
+        { "address": "BHexcGVJbpbk1DCJfT8GJph7wYiFTiMc3iTVc6ACP99W", "share": 0, "verified": true },
+        { "address": "bnxZZLyvcezhYxRzBwdw7duK9Q9DN26Jd9YZhizTnwg", "share": 100, "verified": false }
+      ],
+      "ownership": {
+        "frozen": false,
+        "delegated": true,
+        "delegate": "FoNprxYzYmwnYzhM964CxEHchhj17YREieJtSAXg9FMU",
+        "ownership_model": "single",
+        "owner": "CJjH2qE3dUb5CdmvhvECpkTfJTsFPgieToUn1wdNSHgF"
+      },
+      "supply": null,
+      "mutable": true,
+      "burnt": false
+    },
+    {
+      "interface": "Custom",
+      "id": "9hutCAGbse5B5pFV9MFNgDJrZ1HzRLPi6qtMSoVpyMRN",
+      "content": {
+        "$schema": "https://schema.metaplex.com/nft1.0.json",
+        "json_uri": "https://cdn.pesky-penguins.com/metadata/4998-hd.json",
+        "files": [
+          {
+            "uri": "https://cdn.pesky-penguins.com/artwork/4998-hd.png",
+            "cdn_uri": "https://cdn.helius-rpc.com/cdn-cgi/image//https://cdn.pesky-penguins.com/artwork/4998-hd.png",
+            "mime": "image/png"
+          }
+        ],
+        "metadata": {
+          "attributes": [
+            { "value": "Greyteal", "trait_type": "Background" },
+            { "value": "Blue", "trait_type": "Type" },
+            { "value": "None", "trait_type": "Head" },
+            { "value": "None", "trait_type": "Accessories" },
+            { "value": "Eye Patch", "trait_type": "Eyes" },
+            { "value": "None", "trait_type": "Body" },
+            { "value": "Joint", "trait_type": "Beak" },
+            { "value": "true", "trait_type": "Hyper-Dimensional?" },
+            { "value": "HD", "trait_type": "Art Style" }
+          ],
+          "description": "Pesky Penguins #4998 always says \"gm\" and \"gn\" back.",
+          "name": "Pesky Penguins #4998",
+          "symbol": "NOOT"
+        },
+        "links": {
+          "external_url": "https://pesky-penguins.com",
+          "image": "https://cdn.pesky-penguins.com/artwork/4998-hd.png"
+        }
+      },
+      "authorities": [{ "address": "pEsKYABNARLiDFYrjbjHDieD5h6gHrvYf9Vru62NX9k", "scopes": ["full"] }],
+      "compression": {
+        "eligible": false,
+        "compressed": false,
+        "data_hash": "",
+        "creator_hash": "",
+        "asset_hash": "",
+        "tree": "",
+        "seq": 0,
+        "leaf_id": 0
+      },
+      "grouping": [{ "group_key": "collection", "group_value": "DjdF3JdTBY9UTy47PHFXbTnhuQxdDi87SunVARBMnteY" }],
+      "royalty": {
+        "royalty_model": "creators",
+        "target": null,
+        "percent": 0.060000000000000005,
+        "basis_points": 600,
+        "primary_sale_happened": true,
+        "locked": false
+      },
+      "creators": [
+        { "address": "A6XTVFiwGVsG6b6LsvQTGnV5LH3Pfa3qW3TGz8RjToLp", "share": 0, "verified": true },
+        { "address": "pEsKYABNARLiDFYrjbjHDieD5h6gHrvYf9Vru62NX9k", "share": 33, "verified": true },
+        { "address": "ppTeamTpw1cbC8ybJpppbnoL7xXD9froJNFb5uvoPvb", "share": 50, "verified": true },
+        { "address": "2Z5oBJGZ1XYiE9bqGBunNjxkBfcFbJ8BbXBhrPvmWayw", "share": 17, "verified": false }
+      ],
+      "ownership": {
+        "frozen": false,
+        "delegated": false,
+        "delegate": null,
+        "ownership_model": "single",
+        "owner": "CJjH2qE3dUb5CdmvhvECpkTfJTsFPgieToUn1wdNSHgF"
+      },
+      "supply": null,
+      "mutable": true,
+      "burnt": false
+    },
+    {
+      "interface": "Custom",
+      "id": "ENX3AwDuxQog4c2QNBCe2zG5GFEJPpsr24VC1hLAG6R6",
+      "content": {
+        "$schema": "https://schema.metaplex.com/nft1.0.json",
+        "json_uri": "https://famousfoxes.com/metadata/195.json",
+        "files": [
+          {
+            "uri": "https://famousfoxes.com/hd/195.png",
+            "cdn_uri": "https://cdn.helius-rpc.com/cdn-cgi/image//https://famousfoxes.com/hd/195.png",
+            "mime": "image/png"
+          }
+        ],
+        "metadata": {
+          "attributes": [
+            { "value": "Champagne", "trait_type": "Background" },
+            { "value": "Tank Top Pink", "trait_type": "Outfit" },
+            { "value": "Natural", "trait_type": "Skin" },
+            { "value": "Stache", "trait_type": "Mouth" },
+            { "value": "Bowler Light", "trait_type": "Head" },
+            { "value": "Wink", "trait_type": "Eyes" }
+          ],
+          "description": "The Famous Fox Federation, an independent organization of the most fabulously famous foxes on the Blockchain.",
+          "name": "Fox #195",
+          "symbol": "FFF"
+        },
+        "links": { "image": "https://famousfoxes.com/hd/195.png", "external_url": "https://famousfoxes.com" }
+      },
+      "authorities": [{ "address": "3pMvTLUA9NzZQd4gi725p89mvND1wRNQM3C8XEv1hTdA", "scopes": ["full"] }],
+      "compression": {
+        "eligible": false,
+        "compressed": false,
+        "data_hash": "",
+        "creator_hash": "",
+        "asset_hash": "",
+        "tree": "",
+        "seq": 0,
+        "leaf_id": 0
+      },
+      "grouping": [{ "group_key": "collection", "group_value": "BUjZjAS2vbbb65g7Z1Ca9ZRVYoJscURG5L3AkVvHP9ac" }],
+      "royalty": {
+        "royalty_model": "creators",
+        "target": null,
+        "percent": 0.042,
+        "basis_points": 420,
+        "primary_sale_happened": true,
+        "locked": false
+      },
+      "creators": [
+        { "address": "D3XrkNZz6wx6cofot7Zohsf2KSsu2ArngNk8VqU9cTY3", "share": 0, "verified": true },
+        { "address": "3pMvTLUA9NzZQd4gi725p89mvND1wRNQM3C8XEv1hTdA", "share": 100, "verified": true }
+      ],
+      "ownership": {
+        "frozen": false,
+        "delegated": false,
+        "delegate": null,
+        "ownership_model": "single",
+        "owner": "CJjH2qE3dUb5CdmvhvECpkTfJTsFPgieToUn1wdNSHgF"
+      },
+      "supply": null,
+      "mutable": true,
+      "burnt": false
+    },
+    {
+      "interface": "Custom",
+      "id": "5qTFFcSHuMYCVQydmxTk8sWoY1yNivQhFK33aNUGHqt",
+      "content": {
+        "$schema": "https://schema.metaplex.com/nft1.0.json",
+        "json_uri": "https://cdn.pesky-penguins.com/metadata/696-pre.json",
+        "files": [
+          {
+            "uri": "https://cdn.pesky-penguins.com/artwork/696-pixel.png",
+            "cdn_uri": "https://cdn.helius-rpc.com/cdn-cgi/image//https://cdn.pesky-penguins.com/artwork/696-pixel.png",
+            "mime": "image/png"
+          }
+        ],
+        "metadata": {
+          "attributes": [
+            { "value": "Coffeefruit", "trait_type": "Background" },
+            { "value": "Orange", "trait_type": "Type" },
+            { "value": "Crazy Hair", "trait_type": "Head" },
+            { "value": "None", "trait_type": "Accessories" },
+            { "value": "Normal", "trait_type": "Eyes" },
+            { "value": "None", "trait_type": "Body" },
+            { "value": "None", "trait_type": "Beak" },
+            { "value": "false", "trait_type": "Hyper-Dimensional?" },
+            { "value": "Pixel", "trait_type": "Art Style" }
+          ],
+          "description": "Pesky Penguin #696 believes in you.",
+          "name": "Pesky Penguins #696",
+          "symbol": "NOOT"
+        },
+        "links": {
+          "external_url": "https://pesky-penguins.com",
+          "image": "https://cdn.pesky-penguins.com/artwork/696-pixel.png"
+        }
+      },
+      "authorities": [{ "address": "pEsKYABNARLiDFYrjbjHDieD5h6gHrvYf9Vru62NX9k", "scopes": ["full"] }],
+      "compression": {
+        "eligible": false,
+        "compressed": false,
+        "data_hash": "",
+        "creator_hash": "",
+        "asset_hash": "",
+        "tree": "",
+        "seq": 0,
+        "leaf_id": 0
+      },
+      "grouping": [{ "group_key": "collection", "group_value": "DjdF3JdTBY9UTy47PHFXbTnhuQxdDi87SunVARBMnteY" }],
+      "royalty": {
+        "royalty_model": "creators",
+        "target": null,
+        "percent": 0.060000000000000005,
+        "basis_points": 600,
+        "primary_sale_happened": true,
+        "locked": false
+      },
+      "creators": [
+        { "address": "A6XTVFiwGVsG6b6LsvQTGnV5LH3Pfa3qW3TGz8RjToLp", "share": 0, "verified": true },
+        { "address": "pEsKYABNARLiDFYrjbjHDieD5h6gHrvYf9Vru62NX9k", "share": 33, "verified": true },
+        { "address": "ppTeamTpw1cbC8ybJpppbnoL7xXD9froJNFb5uvoPvb", "share": 50, "verified": true },
+        { "address": "2Z5oBJGZ1XYiE9bqGBunNjxkBfcFbJ8BbXBhrPvmWayw", "share": 17, "verified": false }
+      ],
+      "ownership": {
+        "frozen": true,
+        "delegated": true,
+        "delegate": "FoNprxYzYmwnYzhM964CxEHchhj17YREieJtSAXg9FMU",
+        "ownership_model": "single",
+        "owner": "CJjH2qE3dUb5CdmvhvECpkTfJTsFPgieToUn1wdNSHgF"
+      },
+      "supply": null,
+      "mutable": true,
+      "burnt": false
+    }
+  ]
+}
