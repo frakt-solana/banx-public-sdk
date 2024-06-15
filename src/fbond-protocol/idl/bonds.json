@@ -262,68 +262,6 @@
       "args": []
     },
     {
-      "name": "depositToBondOfferStandard",
-      "accounts": [
-        {
-          "name": "bondOfferV2",
-          "isMut": true,
-          "isSigner": false
-        },
-        {
-          "name": "user",
-          "isMut": true,
-          "isSigner": true
-        },
-        {
-          "name": "systemProgram",
-          "isMut": false,
-          "isSigner": false
-        },
-        {
-          "name": "rent",
-          "isMut": false,
-          "isSigner": false
-        }
-      ],
-      "args": [
-        {
-          "name": "amountOfSolToDeposit",
-          "type": "u64"
-        }
-      ]
-    },
-    {
-      "name": "withdrawFromBondOfferStandard",
-      "accounts": [
-        {
-          "name": "bondOfferV2",
-          "isMut": true,
-          "isSigner": false
-        },
-        {
-          "name": "user",
-          "isMut": true,
-          "isSigner": true
-        },
-        {
-          "name": "systemProgram",
-          "isMut": false,
-          "isSigner": false
-        },
-        {
-          "name": "rent",
-          "isMut": false,
-          "isSigner": false
-        }
-      ],
-      "args": [
-        {
-          "name": "amountOfTokensToWithdraw",
-          "type": "u64"
-        }
-      ]
-    },
-    {
       "name": "initializeHadoMarket",
       "accounts": [
         {
@@ -428,32 +366,6 @@
           "type": "u64"
         }
       ]
-    },
-    {
-      "name": "removeBondOfferV2",
-      "accounts": [
-        {
-          "name": "bondOfferV2",
-          "isMut": true,
-          "isSigner": false
-        },
-        {
-          "name": "user",
-          "isMut": true,
-          "isSigner": true
-        },
-        {
-          "name": "systemProgram",
-          "isMut": false,
-          "isSigner": false
-        },
-        {
-          "name": "rent",
-          "isMut": false,
-          "isSigner": false
-        }
-      ],
-      "args": []
     },
     {
       "name": "initializeFlashLoanPool",
@@ -634,95 +546,6 @@
       "args": [
         {
           "name": "solAmountToRepay",
-          "type": "u64"
-        }
-      ]
-    },
-    {
-      "name": "createBondOfferStandard",
-      "accounts": [
-        {
-          "name": "bondOfferV2",
-          "isMut": true,
-          "isSigner": false
-        },
-        {
-          "name": "hadoMarket",
-          "isMut": false,
-          "isSigner": false
-        },
-        {
-          "name": "user",
-          "isMut": true,
-          "isSigner": true
-        },
-        {
-          "name": "systemProgram",
-          "isMut": false,
-          "isSigner": false
-        },
-        {
-          "name": "rent",
-          "isMut": false,
-          "isSigner": false
-        }
-      ],
-      "args": [
-        {
-          "name": "bondOfferRandomSeed",
-          "type": "u64"
-        },
-        {
-          "name": "amountOfSolToDeposit",
-          "type": "u64"
-        },
-        {
-          "name": "loanToValueFilter",
-          "type": "u64"
-        },
-        {
-          "name": "maxReturnAmountFilter",
-          "type": "u64"
-        },
-        {
-          "name": "bondFeatures",
-          "type": {
-            "defined": "BondFeatures"
-          }
-        }
-      ]
-    },
-    {
-      "name": "updateBondOfferStandard",
-      "accounts": [
-        {
-          "name": "bondOfferV2",
-          "isMut": true,
-          "isSigner": false
-        },
-        {
-          "name": "user",
-          "isMut": true,
-          "isSigner": true
-        },
-        {
-          "name": "systemProgram",
-          "isMut": false,
-          "isSigner": false
-        },
-        {
-          "name": "rent",
-          "isMut": false,
-          "isSigner": false
-        }
-      ],
-      "args": [
-        {
-          "name": "loanToValueFilter",
-          "type": "u64"
-        },
-        {
-          "name": "maxReturnAmountFilter",
           "type": "u64"
         }
       ]
@@ -911,11 +734,6 @@
         {
           "name": "rent",
           "isMut": false,
-          "isSigner": false
-        },
-        {
-          "name": "banxSolStakingOffer",
-          "isMut": true,
           "isSigner": false
         },
         {
@@ -1297,6 +1115,14 @@
           "name": "associatedTokenProgram",
           "isMut": false,
           "isSigner": false
+        },
+        {
+          "name": "bondOfferVault",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "CHECK vault for sol"
+          ]
         }
       ],
       "args": [
@@ -2917,11 +2743,6 @@
           "isSigner": false
         },
         {
-          "name": "banxSolStakingOffer",
-          "isMut": true,
-          "isSigner": false
-        },
-        {
           "name": "userSplTokenAccountUninitialized",
           "isMut": true,
           "isSigner": false
@@ -3012,11 +2833,6 @@
           "isSigner": false
         },
         {
-          "name": "banxSolStakingOffer",
-          "isMut": true,
-          "isSigner": false
-        },
-        {
           "name": "userSplTokenAccountUninitialized",
           "isMut": true,
           "isSigner": false
@@ -3093,11 +2909,6 @@
           "isSigner": false
         },
         {
-          "name": "banxSolStakingOffer",
-          "isMut": true,
-          "isSigner": false
-        },
-        {
           "name": "userSplTokenAccountUninitialized",
           "isMut": true,
           "isSigner": false
@@ -3155,66 +2966,9 @@
           "name": "rent",
           "isMut": false,
           "isSigner": false
-        },
-        {
-          "name": "banxSolStakingOffer",
-          "isMut": true,
-          "isSigner": false
         }
       ],
       "args": []
-    },
-    {
-      "name": "migrateOldToBondingOffer",
-      "accounts": [
-        {
-          "name": "bondOfferV2",
-          "isMut": true,
-          "isSigner": false
-        },
-        {
-          "name": "oldBondOfferV2",
-          "isMut": true,
-          "isSigner": false
-        },
-        {
-          "name": "mutualBondTradeTxnVault",
-          "isMut": true,
-          "isSigner": false,
-          "docs": [
-            "CHECK vault for sol"
-          ]
-        },
-        {
-          "name": "bondOfferVault",
-          "isMut": true,
-          "isSigner": false,
-          "docs": [
-            "CHECK vault for sol"
-          ]
-        },
-        {
-          "name": "user",
-          "isMut": true,
-          "isSigner": true
-        },
-        {
-          "name": "systemProgram",
-          "isMut": false,
-          "isSigner": false
-        },
-        {
-          "name": "rent",
-          "isMut": false,
-          "isSigner": false
-        }
-      ],
-      "args": [
-        {
-          "name": "bondOfferRandomSeed",
-          "type": "u64"
-        }
-      ]
     },
     {
       "name": "borrowerRefinanceToSame",
@@ -3532,6 +3286,21 @@
         {
           "name": "rent",
           "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "hadesTokenMint",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "userHadesTokenAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "banxStakingVaultHadesTokenAccount",
+          "isMut": true,
           "isSigner": false
         }
       ],
@@ -4331,6 +4100,10 @@
         },
         {
           "name": "tokensPerWeek",
+          "type": "u64"
+        },
+        {
+          "name": "hadesPerWeek",
           "type": "u64"
         }
       ]
@@ -5491,6 +5264,206 @@
           "type": "u64"
         }
       ]
+    },
+    {
+      "name": "closeTokenAccountsBanxSol",
+      "accounts": [
+        {
+          "name": "user",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "rent",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "wrappedSolTokenAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "banxSolTokenAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "protocolFeeReciver",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "banxSolFeeTokenAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "banxSolMint",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "wrappedSolMint",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "migrateBondOfferToV3",
+      "accounts": [
+        {
+          "name": "bondOffer",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "bondOfferVault",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "CHECK vault for sol"
+          ]
+        },
+        {
+          "name": "splTokenMint",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "user",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "associatedTokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "vaultSplTokenAccountUninitialized",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "userTokenAccount",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "rent",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "patchBidCapInOffer",
+      "accounts": [
+        {
+          "name": "bondOffer",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "user",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "claimPerpetualBondOfferRepayments",
+      "accounts": [
+        {
+          "name": "bondOfferV2",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "bondOfferVault",
+          "isMut": true,
+          "isSigner": false,
+          "docs": [
+            "CHECK vault for sol"
+          ]
+        },
+        {
+          "name": "user",
+          "isMut": true,
+          "isSigner": true
+        },
+        {
+          "name": "systemProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "rent",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "userSplTokenAccountUninitialized",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "vaultSplTokenAccountUninitialized",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "splTokenMint",
+          "isMut": true,
+          "isSigner": false
+        },
+        {
+          "name": "tokenProgram",
+          "isMut": false,
+          "isSigner": false
+        },
+        {
+          "name": "associatedTokenProgram",
+          "isMut": false,
+          "isSigner": false
+        }
+      ],
+      "args": []
     }
   ],
   "accounts": [
@@ -5550,7 +5523,7 @@
             "type": "u64"
           },
           {
-            "name": "placeholderOne",
+            "name": "amountOfHadesTokensHarvested",
             "type": "u64"
           },
           {
@@ -5658,8 +5631,20 @@
             "type": "u64"
           },
           {
-            "name": "placeholderOne",
-            "type": "publicKey"
+            "name": "hadesPerWeek",
+            "type": "u64"
+          },
+          {
+            "name": "placeholderTwo",
+            "type": "u64"
+          },
+          {
+            "name": "placeholderThree",
+            "type": "u64"
+          },
+          {
+            "name": "placeholderFour",
+            "type": "u64"
           }
         ]
       }
@@ -6011,336 +5996,6 @@
       }
     },
     {
-      "name": "hadespinLeaderboardEntry",
-      "type": {
-        "kind": "struct",
-        "fields": [
-          {
-            "name": "user",
-            "type": "publicKey"
-          },
-          {
-            "name": "totalSolDeposited",
-            "type": "u64"
-          },
-          {
-            "name": "totalSolInNftDeposited",
-            "type": "u64"
-          },
-          {
-            "name": "totalNftDeposited",
-            "type": "u64"
-          },
-          {
-            "name": "totalFeePayed",
-            "type": "u64"
-          },
-          {
-            "name": "totalSolWon",
-            "type": "u64"
-          },
-          {
-            "name": "lastTransactedAt",
-            "type": "u64"
-          },
-          {
-            "name": "placeholderOne",
-            "type": "publicKey"
-          },
-          {
-            "name": "placeholderTwo",
-            "type": "publicKey"
-          }
-        ]
-      }
-    },
-    {
-      "name": "hadespinLeaderboardWeekEntry",
-      "type": {
-        "kind": "struct",
-        "fields": [
-          {
-            "name": "user",
-            "type": "publicKey"
-          },
-          {
-            "name": "week",
-            "type": "u64"
-          },
-          {
-            "name": "totalSolDeposited",
-            "type": "u64"
-          },
-          {
-            "name": "totalSolInNftDeposited",
-            "type": "u64"
-          },
-          {
-            "name": "totalNftDeposited",
-            "type": "u64"
-          },
-          {
-            "name": "totalFeePayed",
-            "type": "u64"
-          },
-          {
-            "name": "totalSolWon",
-            "type": "u64"
-          },
-          {
-            "name": "lastTransactedAt",
-            "type": "u64"
-          },
-          {
-            "name": "placeholderOne",
-            "type": "publicKey"
-          },
-          {
-            "name": "placeholderTwo",
-            "type": "publicKey"
-          }
-        ]
-      }
-    },
-    {
-      "name": "hadespinRakeback",
-      "type": {
-        "kind": "struct",
-        "fields": [
-          {
-            "name": "user",
-            "type": "publicKey"
-          },
-          {
-            "name": "hadesToClaimAmount",
-            "type": "u64"
-          },
-          {
-            "name": "claimTimestamp",
-            "type": "u64"
-          },
-          {
-            "name": "claimedAt",
-            "type": "u64"
-          },
-          {
-            "name": "claimed",
-            "type": "bool"
-          },
-          {
-            "name": "lastTransactedAt",
-            "type": "u64"
-          },
-          {
-            "name": "placeholderOne",
-            "type": "publicKey"
-          }
-        ]
-      }
-    },
-    {
-      "name": "roundSetting",
-      "type": {
-        "kind": "struct",
-        "fields": [
-          {
-            "name": "completedRounds",
-            "type": "u64"
-          },
-          {
-            "name": "totalSolDeposited",
-            "type": "u64"
-          },
-          {
-            "name": "totalFeeCollected",
-            "type": "u64"
-          },
-          {
-            "name": "totalParticipants",
-            "type": "u64"
-          },
-          {
-            "name": "roundDuration",
-            "type": "u64"
-          },
-          {
-            "name": "minSolToDeposit",
-            "type": "u64"
-          },
-          {
-            "name": "feePercent",
-            "type": "u64"
-          },
-          {
-            "name": "canInitializeNextRound",
-            "type": "bool"
-          },
-          {
-            "name": "lastRoundEndsAt",
-            "type": "u64"
-          },
-          {
-            "name": "lastTransactedAt",
-            "type": "u64"
-          },
-          {
-            "name": "rakebackHadesForSol",
-            "type": "u64"
-          },
-          {
-            "name": "contractBid",
-            "type": "u64"
-          },
-          {
-            "name": "placeholdeOne",
-            "type": "u64"
-          },
-          {
-            "name": "placeholdeTwo",
-            "type": "u64"
-          }
-        ]
-      }
-    },
-    {
-      "name": "round",
-      "type": {
-        "kind": "struct",
-        "fields": [
-          {
-            "name": "roundState",
-            "type": {
-              "defined": "RoundState"
-            }
-          },
-          {
-            "name": "roundValue",
-            "type": "u64"
-          },
-          {
-            "name": "startedAt",
-            "type": "u64"
-          },
-          {
-            "name": "solAmount",
-            "type": "u64"
-          },
-          {
-            "name": "feeAmount",
-            "type": "u64"
-          },
-          {
-            "name": "participants",
-            "type": "u64"
-          },
-          {
-            "name": "roundEndsAt",
-            "type": "u64"
-          },
-          {
-            "name": "lastTransactedAt",
-            "type": "u64"
-          },
-          {
-            "name": "winner",
-            "type": "publicKey"
-          },
-          {
-            "name": "roundNumber",
-            "type": "u64"
-          },
-          {
-            "name": "solInNftAmount",
-            "type": "u64"
-          },
-          {
-            "name": "contractBid",
-            "type": "u64"
-          },
-          {
-            "name": "placeholderOne",
-            "type": "u64"
-          },
-          {
-            "name": "placeholderTwo",
-            "type": "u64"
-          },
-          {
-            "name": "placeholderThree",
-            "type": "u64"
-          }
-        ]
-      }
-    },
-    {
-      "name": "userRound",
-      "type": {
-        "kind": "struct",
-        "fields": [
-          {
-            "name": "round",
-            "type": "publicKey"
-          },
-          {
-            "name": "solDeposited",
-            "type": "u64"
-          },
-          {
-            "name": "startSolPosition",
-            "type": "u64"
-          },
-          {
-            "name": "user",
-            "type": "publicKey"
-          },
-          {
-            "name": "lastTransactedAt",
-            "type": "u64"
-          },
-          {
-            "name": "depositedAt",
-            "type": "u64"
-          },
-          {
-            "name": "nftMint",
-            "type": "publicKey"
-          },
-          {
-            "name": "jackpotSolAmount",
-            "type": "u64"
-          },
-          {
-            "name": "jackpotClaimedAt",
-            "type": "u64"
-          },
-          {
-            "name": "jackpotClaimed",
-            "type": "bool"
-          },
-          {
-            "name": "placeholderOne",
-            "type": "u64"
-          },
-          {
-            "name": "placeholderTwo",
-            "type": "u32"
-          },
-          {
-            "name": "placeholderThree",
-            "type": "bool"
-          },
-          {
-            "name": "placeholderFour",
-            "type": "bool"
-          },
-          {
-            "name": "placeholderFive",
-            "type": "bool"
-          }
-        ]
-      }
-    },
-    {
       "name": "hadoMarketRegistry",
       "type": {
         "kind": "struct",
@@ -6438,52 +6093,6 @@
       }
     },
     {
-      "name": "banxSolStakingOffer",
-      "type": {
-        "kind": "struct",
-        "fields": [
-          {
-            "name": "user",
-            "type": "publicKey"
-          },
-          {
-            "name": "banxSolStakingOfferState",
-            "type": {
-              "defined": "BanxSolStakingOfferState"
-            }
-          },
-          {
-            "name": "lastClaimedAt",
-            "type": "u64"
-          },
-          {
-            "name": "totalClaimedAmount",
-            "type": "u64"
-          },
-          {
-            "name": "totalInterestRewards",
-            "type": "u64"
-          },
-          {
-            "name": "createdAt",
-            "type": "u64"
-          },
-          {
-            "name": "totalLent",
-            "type": "u64"
-          },
-          {
-            "name": "currentInOffer",
-            "type": "u64"
-          },
-          {
-            "name": "placeholderOne",
-            "type": "publicKey"
-          }
-        ]
-      }
-    },
-    {
       "name": "bondOfferV2",
       "type": {
         "kind": "struct",
@@ -6553,6 +6162,112 @@
             "type": {
               "defined": "BondOfferValidation"
             }
+          }
+        ]
+      }
+    },
+    {
+      "name": "bondOfferV3",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "hadoMarket",
+            "type": "publicKey"
+          },
+          {
+            "name": "pairState",
+            "type": {
+              "defined": "PairState"
+            }
+          },
+          {
+            "name": "bondingCurve",
+            "type": {
+              "defined": "BondOfferBondingCurve"
+            }
+          },
+          {
+            "name": "baseSpotPrice",
+            "type": "u64"
+          },
+          {
+            "name": "mathCounter",
+            "type": "i64"
+          },
+          {
+            "name": "currentSpotPrice",
+            "type": "u64"
+          },
+          {
+            "name": "concentrationIndex",
+            "type": "u64"
+          },
+          {
+            "name": "bidCap",
+            "type": "u64"
+          },
+          {
+            "name": "bidSettlement",
+            "type": "i64"
+          },
+          {
+            "name": "edgeSettlement",
+            "type": "u64"
+          },
+          {
+            "name": "fundsSolOrTokenBalance",
+            "type": "u64"
+          },
+          {
+            "name": "buyOrdersQuantity",
+            "type": "u64"
+          },
+          {
+            "name": "lastTransactedAt",
+            "type": "u64"
+          },
+          {
+            "name": "assetReceiver",
+            "type": "publicKey"
+          },
+          {
+            "name": "validation",
+            "type": {
+              "defined": "BondOfferValidation"
+            }
+          },
+          {
+            "name": "fundsInCurrentEpoch",
+            "type": "u64"
+          },
+          {
+            "name": "fundsInNextEpoch",
+            "type": "u64"
+          },
+          {
+            "name": "lastCalculatedSlot",
+            "type": "u64"
+          },
+          {
+            "name": "lastCalculatedTimestamp",
+            "type": "u64"
+          },
+          {
+            "name": "rewardsToHarvest",
+            "type": "u64"
+          },
+          {
+            "name": "rewardsToHarvested",
+            "type": "u64"
+          },
+          {
+            "name": "placeholderOne",
+            "type": "u64"
+          },
+          {
+            "name": "placeholderTwo",
+            "type": "publicKey"
           }
         ]
       }
@@ -7453,26 +7168,6 @@
       }
     },
     {
-      "name": "RoundState",
-      "type": {
-        "kind": "enum",
-        "variants": [
-          {
-            "name": "Uninitialized"
-          },
-          {
-            "name": "Initialized"
-          },
-          {
-            "name": "Open"
-          },
-          {
-            "name": "Drawn"
-          }
-        ]
-      }
-    },
-    {
       "name": "NftValidationWhitelistTypeHado",
       "type": {
         "kind": "enum",
@@ -7556,23 +7251,6 @@
           },
           {
             "name": "Spl"
-          }
-        ]
-      }
-    },
-    {
-      "name": "BanxSolStakingOfferState",
-      "type": {
-        "kind": "enum",
-        "variants": [
-          {
-            "name": "Uninitialized"
-          },
-          {
-            "name": "Initialized"
-          },
-          {
-            "name": "Closed"
           }
         ]
       }
@@ -8026,1451 +7704,1006 @@
     },
     {
       "code": 6006,
-      "name": "InvalidOwner",
-      "msg": "InvalidOwner"
-    },
-    {
-      "code": 6007,
-      "name": "InvalidDelta",
-      "msg": "InvalidDelta"
-    },
-    {
-      "code": 6008,
       "name": "InvalidFee",
       "msg": "InvalidFee"
     },
     {
-      "code": 6009,
-      "name": "InvalidPairType",
-      "msg": "InvalidPairType"
-    },
-    {
-      "code": 6010,
-      "name": "NotEnoughInTokenAccount",
-      "msg": "NotEnoughInTokenAccount"
-    },
-    {
-      "code": 6011,
+      "code": 6007,
       "name": "InvalidMint",
       "msg": "InvalidMint"
     },
     {
-      "code": 6012,
-      "name": "InvalidSolVault",
-      "msg": "InvalidSolVault"
-    },
-    {
-      "code": 6013,
-      "name": "InvalidFundingAmount",
-      "msg": "InvalidFundingAmount"
-    },
-    {
-      "code": 6014,
-      "name": "NotEnoughLamports",
-      "msg": "NotEnoughLamports"
-    },
-    {
-      "code": 6015,
-      "name": "InvalidJpegOwner",
-      "msg": "InvalidJpegOwner"
-    },
-    {
-      "code": 6016,
-      "name": "InvalidTokenAccount",
-      "msg": "InvalidTokenAccount"
-    },
-    {
-      "code": 6017,
-      "name": "InvalidPayer",
-      "msg": "InvalidPayer"
-    },
-    {
-      "code": 6018,
-      "name": "ShouldBeActive",
-      "msg": "ShouldBeActive"
-    },
-    {
-      "code": 6019,
+      "code": 6008,
       "name": "CantMakeZeroOrders",
       "msg": "Can't make 0 orders"
     },
     {
-      "code": 6020,
-      "name": "OnlyClassicAuthority",
-      "msg": "OnlyClassicAuthority"
-    },
-    {
-      "code": 6021,
-      "name": "NotValidAuthorityAdapter",
-      "msg": "NotValidAuthorityAdapter"
-    },
-    {
-      "code": 6022,
+      "code": 6009,
       "name": "UserDoesntHaveAuthority",
       "msg": "UserDoesntHaveAuthority"
     },
     {
-      "code": 6023,
-      "name": "WrongSeed",
-      "msg": "WrongSeed"
-    },
-    {
-      "code": 6024,
-      "name": "CanDepositSolOnlyToTokenToNft",
-      "msg": "CanDepositSolOnlyToTokenToNft"
-    },
-    {
-      "code": 6025,
-      "name": "MaxAmountOfOrdersSucceeded",
-      "msg": "MaxAmountOfOrdersSucceeded"
-    },
-    {
-      "code": 6026,
-      "name": "CanDepositNftOnlyToNftToToken",
-      "msg": "CanDepositNftOnlyToNftToToken"
-    },
-    {
-      "code": 6027,
+      "code": 6010,
       "name": "TokenAccountDoesntContainNft",
       "msg": "TokenAccountDoesntContainNft"
     },
     {
-      "code": 6028,
+      "code": 6011,
       "name": "MarketAuthorityIncorrect",
       "msg": "MarketAuthorityIncorrect"
     },
     {
-      "code": 6029,
-      "name": "CanAddWhitelistOnlyToInitializingMarket",
-      "msg": "CanAddWhitelistOnlyToInitializingMarket"
-    },
-    {
-      "code": 6030,
+      "code": 6012,
       "name": "CanPutPairsOnlyToAvailableMarkets",
       "msg": "CanPutPairsOnlyToAvailableMarkets"
     },
     {
-      "code": 6031,
-      "name": "PairAndNftValidationMarketDoesntMatch",
-      "msg": "PairAndNftValidationMarketDoesntMatch"
-    },
-    {
-      "code": 6032,
-      "name": "OnlyMarketScopeSupported",
-      "msg": "OnlyMarketScopeSupported"
-    },
-    {
-      "code": 6033,
+      "code": 6013,
       "name": "NotWhitelistedNftForThisMarket",
       "msg": "NotWhitelistedNftForThisMarket"
     },
     {
-      "code": 6034,
-      "name": "CanDepositOnlyToLiquidityProvision",
-      "msg": "CanDepositOnlyToLiquidityProvision"
-    },
-    {
-      "code": 6035,
-      "name": "NftBoxDoesntMatchPair",
-      "msg": "NftBoxDoesntMatchPair"
-    },
-    {
-      "code": 6036,
-      "name": "NftBoxShouldBeActive",
-      "msg": "NftBoxShouldBeActive"
-    },
-    {
-      "code": 6037,
-      "name": "NftBoxDoesntMatchMint",
-      "msg": "NftBoxDoesntMatchMint"
-    },
-    {
-      "code": 6038,
-      "name": "CantBuyNftFromTokenForNft",
-      "msg": "CantBuyNftFromTokenForNft"
-    },
-    {
-      "code": 6039,
-      "name": "OnlyTokenForNftIsEligibleForThisSell",
-      "msg": "OnlyTokenForNftIsEligibleForThisSell"
-    },
-    {
-      "code": 6040,
+      "code": 6014,
       "name": "NoBuyOrdersOnThisPair",
       "msg": "NoBuyOrdersOnThisPair"
     },
     {
-      "code": 6041,
-      "name": "OnlyLiquidityProvisionIsEligibleForThisSell",
-      "msg": "OnlyLiquidityProvisionIsEligibleForThisSell"
-    },
-    {
-      "code": 6042,
-      "name": "OnlyTokenForNftIsEligibleForThisWithdrawal",
-      "msg": "OnlyTokenForNftIsEligibleForThisWithdrawal"
-    },
-    {
-      "code": 6043,
-      "name": "OnlyNftForTokenIsEligibleForThisWithdrawal",
-      "msg": "OnlyNftForTokenIsEligibleForThisWithdrawal"
-    },
-    {
-      "code": 6044,
-      "name": "OnlyLiquidityProvisionIsEligibleForThisWithdrawal",
-      "msg": "OnlyLiquidityProvisionIsEligibleForThisWithdrawal"
-    },
-    {
-      "code": 6045,
+      "code": 6015,
       "name": "InstructionIsNotSupported",
       "msg": "InstructionIsNotSupported"
     },
     {
-      "code": 6046,
+      "code": 6016,
       "name": "CanTradeOnlyWithPairsOnMarket",
       "msg": "CanTradeOnlyWithPairsOnMarket"
     },
     {
-      "code": 6047,
-      "name": "NoLiquidityFeesToWithdraw",
-      "msg": "NoLiquidityFeesToWithdraw"
-    },
-    {
-      "code": 6048,
-      "name": "MaxAmountToPayExceeded",
-      "msg": "MaxAmountToPayExceeded"
-    },
-    {
-      "code": 6049,
-      "name": "GettingLessThanMinAmountToGet",
-      "msg": "GettingLessThanMinAmountToGet"
-    },
-    {
-      "code": 6050,
+      "code": 6017,
       "name": "UserDoesntHaveHadomarketAuthority",
       "msg": "UserDoesntHaveHadomarketAuthority"
     },
     {
-      "code": 6051,
+      "code": 6018,
       "name": "HadomarketAlreadyFinished",
       "msg": "HadomarketAlreadyFinished"
     },
     {
-      "code": 6052,
-      "name": "CanDepositLiqudityOnlyToVirtualOrInitializingPairs",
-      "msg": "CanDepositLiqudityOnlyToVirtualOrInitializingPairs"
-    },
-    {
-      "code": 6053,
+      "code": 6019,
       "name": "CanModifyOnlyToVirtualOrInitializingPairs",
       "msg": "CanModifyOnlyToVirtualOrInitializingPairs"
     },
     {
-      "code": 6054,
-      "name": "LiquidityProvisionOrderPairDoesntMatch",
-      "msg": "LiquidityProvisionOrderPairDoesntMatch"
-    },
-    {
-      "code": 6055,
-      "name": "OnlyVirtualLpOrdersCanBeWithdrawnByThisFunction",
-      "msg": "OnlyVirtualLpOrdersCanBeWithdrawnByThisFunction"
-    },
-    {
-      "code": 6056,
-      "name": "OnlyVirtualOrTokenizedLpOrdersCanBeReplacedByThisFunction",
-      "msg": "OnlyVirtualOrTokenizedLpOrdersCanBeReplacedByThisFunction"
-    },
-    {
-      "code": 6057,
-      "name": "LiquidityProvisionOrderNotEdge",
-      "msg": "LiquidityProvisionOrderNotEdge"
-    },
-    {
-      "code": 6058,
-      "name": "NftPairBoxNotParsingFromRemaining",
-      "msg": "NftPairBoxNotParsingFromRemaining"
-    },
-    {
-      "code": 6059,
-      "name": "VaultNftTokenAccountNotParsingFromRemaining",
-      "msg": "VaultNftTokenAccountNotParsingFromRemaining"
-    },
-    {
-      "code": 6060,
-      "name": "UserTokenAccountNotParsingFromRemaining",
-      "msg": "UserTokenAccountNotParsingFromRemaining"
-    },
-    {
-      "code": 6061,
-      "name": "WithdrawingOnlyAtLeastOneBuyAndOneSellPairs",
-      "msg": "WithdrawingOnlyAtLeastOneBuyAndOneSellPairs"
-    },
-    {
-      "code": 6062,
-      "name": "VaultDoesntMatchBox",
-      "msg": "VaultDoesntMatchBox"
-    },
-    {
-      "code": 6063,
-      "name": "WithdrawingOnlyBuyOrdersPairs",
-      "msg": "WithdrawingOnlyBuyOrdersPairs"
-    },
-    {
-      "code": 6064,
-      "name": "WithdrawingOnlySellOrdersPairs",
-      "msg": "WithdrawingOnlySellOrdersPairs"
-    },
-    {
-      "code": 6065,
-      "name": "LiquidityProvisionOrderIsWithdrawn",
-      "msg": "LiquidityProvisionOrderIsWithdrawn"
-    },
-    {
-      "code": 6066,
-      "name": "LiquidityProvisionOrderIsNotCorrectOrderForPair",
-      "msg": "LiquidityProvisionOrderIsNotCorrectOrderForPair"
-    },
-    {
-      "code": 6067,
-      "name": "OnlyMarketVirtualPairsCanBeTokenized",
-      "msg": "OnlyMarketVirtualPairsCanBeTokenized"
-    },
-    {
-      "code": 6068,
-      "name": "OnlyLiquidityProvisionPairsCanBeTokenized",
-      "msg": "OnlyLiquidityProvisionPairsCanBeTokenized"
-    },
-    {
-      "code": 6069,
-      "name": "OnlyInitializingPairsCanBePutOnMarket",
-      "msg": "OnlyInitializingPairsCanBePutOnMarket"
-    },
-    {
-      "code": 6070,
-      "name": "CanMakeLpOrderTokenizedOnlyFromTokenizedPair",
-      "msg": "CanMakeLpOrderTokenizedOnlyFromTokenizedPair"
-    },
-    {
-      "code": 6071,
-      "name": "OnlyVirtualLpOrderCanBeTokenized",
-      "msg": "OnlyVirtualLpOrderCanBeTokenized"
-    },
-    {
-      "code": 6072,
-      "name": "OnlyTokenizedLpOrdersCanWithdrawFees",
-      "msg": "OnlyTokenizedLpOrdersCanWithdrawFees"
-    },
-    {
-      "code": 6073,
-      "name": "UserLpTokenAccountDoesntContainNft",
-      "msg": "UserLpTokenAccountDoesntContainNft"
-    },
-    {
-      "code": 6074,
-      "name": "OnlyTokenizedLpOrdersCanBeWithdrawnByThisFunction",
-      "msg": "OnlyTokenizedLpOrdersCanBeWithdrawnByThisFunction"
-    },
-    {
-      "code": 6075,
-      "name": "LpTokenMintDoesntMatchOrder",
-      "msg": "LpTokenMintDoesntMatchOrder"
-    },
-    {
-      "code": 6076,
-      "name": "CanCloseVirtualPoolOnlyIfNoLiquidityLeft",
-      "msg": "CanCloseVirtualPoolOnlyIfNoLiquidityLeft"
-    },
-    {
-      "code": 6077,
-      "name": "CantSetBidCapSmallerThanMarketMinimum",
-      "msg": "CantSetBidCapSmallerThanMarketMinimum"
-    },
-    {
-      "code": 6078,
-      "name": "CantDepositNftWithNotMarketDecimals",
-      "msg": "CantDepositNftWithNotMarketDecimals"
-    },
-    {
-      "code": 6079,
-      "name": "FndAmountCantExceedBidCap",
-      "msg": "FndAmountCantExceedBidCap"
-    },
-    {
-      "code": 6080,
-      "name": "CantBuyMoreThatRemainingBidSettlement",
-      "msg": "CantBuyMoreThatRemainingBidSettlement"
-    },
-    {
-      "code": 6081,
-      "name": "CantBuyMoreThanActiveTokensAmount",
-      "msg": "CantBuyMoreThanActiveTokensAmount"
-    },
-    {
-      "code": 6082,
-      "name": "CantSellMoreThanActiveTokensAmount",
-      "msg": "CantSellMoreThanActiveTokensAmount"
-    },
-    {
-      "code": 6083,
-      "name": "CantDepositMoreThanBidCap",
-      "msg": "CantDepositMoreThanBidCap"
-    },
-    {
-      "code": 6084,
-      "name": "CantDepositZero",
-      "msg": "CantDepositZero"
-    },
-    {
-      "code": 6085,
-      "name": "CantWithdrawMoreThanBidCap",
-      "msg": "CantWithdrawMoreThanBidCap"
-    },
-    {
-      "code": 6086,
-      "name": "CantWithdrawZero",
-      "msg": "CantWithdrawZero"
-    },
-    {
-      "code": 6087,
-      "name": "CantWithdrawMoreThanNftBoxActiveTokens",
-      "msg": "CantWithdrawMoreThanNftBoxActiveTokens"
-    },
-    {
-      "code": 6088,
-      "name": "CantSetReturnAmountLessThanMinimum",
-      "msg": "CantSetReturnAmountLessThanMinimum"
-    },
-    {
-      "code": 6089,
-      "name": "CantSetBondDurationNotStandart",
-      "msg": "CantSetBondDurationNotStandart"
-    },
-    {
-      "code": 6090,
-      "name": "CanAddCollateralOnlyToInitializedFBond",
-      "msg": "CanAddCollateralOnlyToInitializedFBond"
-    },
-    {
-      "code": 6091,
-      "name": "OnlyIssuerCanAddCollateralBox",
-      "msg": "OnlyIssuerCanAddCollateralBox"
-    },
-    {
-      "code": 6092,
-      "name": "FBondTokenMintDoesntMatch",
-      "msg": "FBondTokenMintDoesntMatch"
-    },
-    {
-      "code": 6093,
-      "name": "CanActivateOnlyInitializedBond",
-      "msg": "CanActivateOnlyInitializedBond"
-    },
-    {
-      "code": 6094,
+      "code": 6020,
       "name": "BondAuthorityIssuerDoesntMatch",
       "msg": "BondAuthorityIssuerDoesntMatch"
     },
     {
-      "code": 6095,
+      "code": 6021,
       "name": "CanRepayOnlyActivatedBond",
       "msg": "CanRepayOnlyActivatedBond"
     },
     {
-      "code": 6096,
-      "name": "CanRedeemOnlyRepaidFBond",
-      "msg": "CanRedeemOnlyRepaidFBond"
-    },
-    {
-      "code": 6097,
-      "name": "CantSetNotRoundedAmountToReturn",
-      "msg": "CantSetNotRoundedAmountToReturn"
-    },
-    {
-      "code": 6098,
-      "name": "CanGetOnlyRepaidCollateral",
-      "msg": "CanGetOnlyRepaidCollateral"
-    },
-    {
-      "code": 6099,
+      "code": 6022,
       "name": "CollateralTokenMintDoesntMatchBox",
       "msg": "CollateralTokenMintDoesntMatchBox"
     },
     {
-      "code": 6100,
-      "name": "CanLiquidateOnlyActiveFBondWhichEnteredLiquidation",
-      "msg": "CanLiquidateOnlyActiveFBondWhichEnteredLiquidation"
-    },
-    {
-      "code": 6101,
+      "code": 6023,
       "name": "WrongAdmin",
       "msg": "WrongAdmin"
     },
     {
-      "code": 6102,
-      "name": "CanBurnEntireSupplyOnlyForActiveBond",
-      "msg": "CanBurnEntireSupplyOnlyForActiveBond"
-    },
-    {
-      "code": 6103,
-      "name": "UserDoesntOwnAllSupply",
-      "msg": "UserDoesntOwnAllSupply"
-    },
-    {
-      "code": 6104,
-      "name": "WrongAllSupplyBurner",
-      "msg": "WrongAllSupplyBurner"
-    },
-    {
-      "code": 6105,
+      "code": 6024,
       "name": "LoanToValueFilterOutOfBound",
       "msg": "LoanToValueFilterOutOfBound"
     },
     {
-      "code": 6106,
-      "name": "ValidationDoesntMatchPair",
-      "msg": "ValidationDoesntMatchPair"
-    },
-    {
-      "code": 6107,
-      "name": "CollateralBoxDoesntBelongFbond",
-      "msg": "CollateralBoxDoesntBelongFbond"
-    },
-    {
-      "code": 6108,
-      "name": "FraktMarketDoesntMatchHadoMarketRegistry",
-      "msg": "FraktMarketDoesntMatchHadoMarketRegistry"
-    },
-    {
-      "code": 6109,
-      "name": "FraktMarketNotActive",
-      "msg": "FraktMarketNotActive"
-    },
-    {
-      "code": 6110,
-      "name": "OracleFloorDoesntMatchFraktMarket",
-      "msg": "OracleFloorDoesntMatchFraktMarket"
-    },
-    {
-      "code": 6111,
+      "code": 6025,
       "name": "FraktMarketDoesntMatchWhitelistEntry",
       "msg": "FraktMarketDoesntMatchWhitelistEntry"
     },
     {
-      "code": 6112,
-      "name": "ActualLoanToValueExceedsFilter",
-      "msg": "ActualLoanToValueExceedsFilter"
-    },
-    {
-      "code": 6113,
-      "name": "PairDoesntMatchHadomarket",
-      "msg": "PairDoesntMatchHadomarket"
-    },
-    {
-      "code": 6114,
-      "name": "ActualLoanDurationExceedsFilter",
-      "msg": "ActualLoanDurationExceedsFilter"
-    },
-    {
-      "code": 6115,
+      "code": 6026,
       "name": "NftIsNotMasterEdition",
       "msg": "NftIsNotMasterEdition"
     },
     {
-      "code": 6116,
+      "code": 6027,
       "name": "NftValidationAdapterIsExpired",
       "msg": "NftValidationAdapterIsExpired"
     },
     {
-      "code": 6117,
+      "code": 6028,
       "name": "CustomValidationAdapterProgramDoesntMatchUser",
       "msg": "CustomValidationAdapterProgramDoesntMatchUser"
     },
     {
-      "code": 6118,
+      "code": 6029,
       "name": "OnlyAdminCanInitializeFlashLoanPool",
       "msg": "OnlyAdminCanInitializeFlashLoanPool"
     },
     {
-      "code": 6119,
+      "code": 6030,
       "name": "CantSetLoanFeePointsGreaterThanBasePoints",
       "msg": "CantSetLoanFeePointsGreaterThanBasePoints"
     },
     {
-      "code": 6120,
+      "code": 6031,
       "name": "OnlyPoolAuthorityCanDepositAndWithdrawLiquidity",
       "msg": "OnlyPoolAuthorityCanDepositAndWithdrawLiquidity"
     },
     {
-      "code": 6121,
+      "code": 6032,
       "name": "CantWithdrawMoreThanPoolBalance",
       "msg": "CantWithdrawMoreThanPoolBalance"
     },
     {
-      "code": 6122,
+      "code": 6033,
       "name": "CantBorrowAndRepayByCpi",
       "msg": "CantBorrowAndRepayByCpi"
     },
     {
-      "code": 6123,
+      "code": 6034,
       "name": "RepayAmountDoesntCorrespondBorrowAmount",
       "msg": "RepayAmountDoesntCorrespondBorrowAmount"
     },
     {
-      "code": 6124,
+      "code": 6035,
       "name": "TransactionDoesntContainRepayInstruction",
       "msg": "TransactionDoesntContainRepayInstruction"
     },
     {
-      "code": 6125,
+      "code": 6036,
       "name": "AlreadyBorrowing",
       "msg": "AlreadyBorrowing"
     },
     {
-      "code": 6126,
+      "code": 6037,
       "name": "WrongHadeswapProgramId",
       "msg": "WrongHadeswapProgramId"
     },
     {
-      "code": 6127,
+      "code": 6038,
       "name": "AmountToReturnIsHigherThanMax",
       "msg": "AmountToReturnIsHigherThanMax"
     },
     {
-      "code": 6128,
+      "code": 6039,
       "name": "AutocompoundNotSupportedYet",
       "msg": "AutocompoundNotSupportedYet"
     },
     {
-      "code": 6129,
+      "code": 6040,
       "name": "AutocompoundDepositIsNotActive",
       "msg": "AutocompoundDepositIsNotActive"
     },
     {
-      "code": 6130,
+      "code": 6041,
       "name": "AutocompoundDepositDoesntMatchPair",
       "msg": "AutocompoundDepositDoesntMatchPair"
     },
     {
-      "code": 6131,
+      "code": 6042,
       "name": "OnlyAdminCanRedeemFbondsFromAutocompoundToPair",
       "msg": "OnlyAdminCanRedeemFbondsFromAutocompoundToPair"
     },
     {
-      "code": 6132,
+      "code": 6043,
       "name": "InvalidAssetReceiverTokenAccount",
       "msg": "InvalidAssetReceiverTokenAccount"
     },
     {
-      "code": 6133,
+      "code": 6044,
       "name": "AutoreceiveSolToUserFeatureNotEnabled",
       "msg": "AutoreceiveSolToUserFeatureNotEnabled"
     },
     {
-      "code": 6134,
+      "code": 6045,
       "name": "AutocompoundFeatureNotEnabled",
       "msg": "AutocompoundFeatureNotEnabled"
     },
     {
-      "code": 6135,
+      "code": 6046,
       "name": "InvalidAssetReceiver",
       "msg": "InvalidAssetReceiver"
     },
     {
-      "code": 6136,
+      "code": 6047,
       "name": "BondCollateralOrSolReceiverNotUser",
       "msg": "BondCollateralOrSolReceiverNotUser"
     },
     {
-      "code": 6137,
+      "code": 6048,
       "name": "OnlyBuyPairsAreSupported",
       "msg": "OnlyBuyPairsAreSupported"
     },
     {
-      "code": 6138,
+      "code": 6049,
       "name": "CanModifyOnlyTokenForNftPairs",
       "msg": "CanModifyOnlyTokenForNftPairs"
     },
     {
-      "code": 6139,
+      "code": 6050,
       "name": "OraclePriceIsStale",
       "msg": "OraclePriceIsStale"
     },
     {
-      "code": 6140,
+      "code": 6051,
       "name": "NftLiquidationTimeNotPassed",
       "msg": "NftLiquidationTimeNotPassed"
     },
     {
-      "code": 6141,
+      "code": 6052,
       "name": "CanDepositReturnedSolOnlyToLiquidatingBond",
       "msg": "CanDepositReturnedSolOnlyToLiquidatingBond"
     },
     {
-      "code": 6142,
+      "code": 6053,
       "name": "Debugger",
       "msg": "Debugger"
     },
     {
-      "code": 6143,
+      "code": 6054,
       "name": "NotSupportedSellCase",
       "msg": "NotSupportedSellCase"
     },
     {
-      "code": 6144,
+      "code": 6055,
       "name": "CollateralTokenMintDoesntMatchAutocompoundDeposit",
       "msg": "CollateralTokenMintDoesntMatchAutocompoundDeposit"
     },
     {
-      "code": 6145,
+      "code": 6056,
       "name": "NotCorrectAutocompoundType",
       "msg": "NotCorrectAutocompoundType"
     },
     {
-      "code": 6146,
+      "code": 6057,
       "name": "BadRuleSet",
       "msg": "BadRuleSet"
     },
     {
-      "code": 6147,
+      "code": 6058,
       "name": "DelegateBuilderFailed",
       "msg": "DelegateBuilderFailed"
     },
     {
-      "code": 6148,
+      "code": 6059,
       "name": "LockBuilderFailed",
       "msg": "LockBuilderFailed"
     },
     {
-      "code": 6149,
+      "code": 6060,
       "name": "CanRedeemFromAutocompoundToUserOnlyIfPairClosed",
       "msg": "CanRedeemFromAutocompoundToUserOnlyIfPairClosed"
     },
     {
-      "code": 6150,
+      "code": 6061,
       "name": "AmountToClaimCantExceedAmountOfBondsInAutocompoundDeposit",
       "msg": "AmountToClaimCantExceedAmountOfBondsInAutocompoundDeposit"
     },
     {
-      "code": 6151,
+      "code": 6062,
       "name": "CollateralOwnerDoesntMatchCollateralTokenAccount",
       "msg": "CollateralOwnerDoesntMatchCollateralTokenAccount"
     },
     {
-      "code": 6152,
+      "code": 6063,
       "name": "CanLiquidateOnlyBondsWithBondCollateralOrSolReceiver",
       "msg": "CanLiquidateOnlyBondsWithBondCollateralOrSolReceiver"
     },
     {
-      "code": 6153,
+      "code": 6064,
       "name": "MerkleTreeIsNotSupported",
       "msg": "MerkleTreeIsNotSupported"
     },
     {
-      "code": 6154,
+      "code": 6065,
       "name": "UserDoesntHaveEnoughBalance",
       "msg": "UserDoesntHaveEnoughBalance"
     },
     {
-      "code": 6155,
+      "code": 6066,
       "name": "CantSellToBuggedNegativeInterestPair",
       "msg": "CantSellToBuggedNegativeInterestPair"
     },
     {
-      "code": 6156,
+      "code": 6067,
       "name": "ThisCollectionIsDisabled",
       "msg": "ThisCollectionIsDisabled"
     },
     {
-      "code": 6157,
+      "code": 6068,
       "name": "InvalidMutualBondOfferDepositVault",
       "msg": "InvalidMutualBondOfferDepositVault"
     },
     {
-      "code": 6158,
+      "code": 6069,
       "name": "OnlyBondOfferDepositsAndFullBondAreSupported",
       "msg": "OnlyBondOfferDepositsAndFullBondAreSupported"
     },
     {
-      "code": 6159,
+      "code": 6070,
       "name": "MerkleTreeWhitelistIsNotSupported",
       "msg": "MerkleTreeWhitelistIsNotSupported"
     },
     {
-      "code": 6160,
+      "code": 6071,
       "name": "CantSellZero",
       "msg": "CantSellZero"
     },
     {
-      "code": 6161,
+      "code": 6072,
       "name": "BondOfferHadoMarketDoesntMatch",
       "msg": "BondOfferHadoMarketDoesntMatch"
     },
     {
-      "code": 6162,
+      "code": 6073,
       "name": "FundsSolVaultPdaIsIncorrect",
       "msg": "FundsSolVaultPdaIsIncorrect"
     },
     {
-      "code": 6163,
+      "code": 6074,
       "name": "BondOfferVaultPdaIsIncorrect",
       "msg": "BondOfferVaultPdaIsIncorrect"
     },
     {
-      "code": 6164,
+      "code": 6075,
       "name": "BondTradeTransactionV3PdaIsIncorrect",
       "msg": "BondTradeTransactionV3PdaIsIncorrect"
     },
     {
-      "code": 6165,
+      "code": 6076,
       "name": "BondBalancesBeforeAndAfterInstructionDontMatch",
       "msg": "BondBalancesBeforeAndAfterInstructionDontMatch"
     },
     {
-      "code": 6166,
+      "code": 6077,
       "name": "NotAuthorizedToRemoveBondOffer",
       "msg": "NotAuthorizedToRemoveBondOffer"
     },
     {
-      "code": 6167,
+      "code": 6078,
       "name": "CantUpdateRemovedBondOffer",
       "msg": "CantUpdateRemovedBondOffer"
     },
     {
-      "code": 6168,
+      "code": 6079,
       "name": "BondTradeTransactionNotActive",
       "msg": "BondTradeTransactionNotActive"
     },
     {
-      "code": 6169,
+      "code": 6080,
       "name": "BondOfferDoesntMatchTradeTransaction",
       "msg": "BondOfferDoesntMatchTradeTransaction"
     },
     {
-      "code": 6170,
+      "code": 6081,
       "name": "ReceiveNftIsNotOption",
       "msg": "ReceiveNftIsNotOption"
     },
     {
-      "code": 6171,
+      "code": 6082,
       "name": "CanLiquidateOnlyActiveBond",
       "msg": "CanLiquidateOnlyActiveBond"
     },
     {
-      "code": 6172,
+      "code": 6083,
       "name": "CollateralBoxDoesntMatchFbond",
       "msg": "CollateralBoxDoesntMatchFbond"
     },
     {
-      "code": 6173,
+      "code": 6084,
       "name": "AutocompoundPairShouldBeOnMarketVirtual",
       "msg": "AutocompoundPairShouldBeOnMarketVirtual"
     },
     {
-      "code": 6174,
+      "code": 6085,
       "name": "UserDoesntOwnHisBondTradeTransaction",
       "msg": "UserDoesntOwnHisBondTradeTransaction"
     },
     {
-      "code": 6175,
+      "code": 6086,
       "name": "UsersBondTradeTransactionHasIncorrectFbondTokenMint",
       "msg": "UsersBondTradeTransactionHasIncorrectFbondTokenMint"
     },
     {
-      "code": 6176,
+      "code": 6087,
       "name": "UsersBondTradeTransactionIsInactive",
       "msg": "UsersBondTradeTransactionIsInactive"
     },
     {
-      "code": 6177,
+      "code": 6088,
       "name": "SumOfBondsInExitingTradeTransactionsDoesntMatchTotalAmountToSell",
       "msg": "SumOfBondsInExitingTradeTransactionsDoesntMatchTotalAmountToSell"
     },
     {
-      "code": 6178,
+      "code": 6089,
       "name": "CantSellNotFullBondsSupplyOnRefinance",
       "msg": "CantSellNotFullBondsSupplyOnRefinance"
     },
     {
-      "code": 6179,
+      "code": 6090,
       "name": "OnlyAdminCanMigrate",
       "msg": "OnlyAdminCanMigrate"
     },
     {
-      "code": 6180,
+      "code": 6091,
       "name": "BondFeaturesNoneAndReceiveNftOnLiquidationAreNotSupported",
       "msg": "BondFeaturesNoneAndReceiveNftOnLiquidationAreNotSupported"
     },
     {
-      "code": 6181,
+      "code": 6092,
       "name": "SomethingWrongWithMigrationBondOfferIsMissing",
       "msg": "SomethingWrongWithMigrationBondOfferIsMissing"
     },
     {
-      "code": 6182,
+      "code": 6093,
       "name": "SecondAddressIsNotUserOrBondOffer",
       "msg": "SecondAddressIsNotUserOrBondOffer"
     },
     {
-      "code": 6183,
+      "code": 6094,
       "name": "SumOfBondsInRepayDoesntMatchBondsSupply",
       "msg": "SumOfBondsInRepayDoesntMatchBondsSupply"
     },
     {
-      "code": 6184,
+      "code": 6095,
       "name": "CantBuyoutForLowerThanMinimumPrice",
       "msg": "CantBuyoutForLowerThanMinimumPrice"
     },
     {
-      "code": 6185,
+      "code": 6096,
       "name": "CantBuyoutNftOnDutchAuctionWhenThereAreOnlyOneLender",
       "msg": "CantBuyoutNftOnDutchAuctionWhenThereAreOnlyOneLender"
     },
     {
-      "code": 6186,
+      "code": 6097,
       "name": "ThereAreMoreThanOneLenderOfThisBond",
       "msg": "ThereAreMoreThanOneLenderOfThisBond"
     },
     {
-      "code": 6187,
+      "code": 6098,
       "name": "TradeTransactionDoesntMatchBond",
       "msg": "TradeTransactionDoesntMatchBond"
     },
     {
-      "code": 6188,
+      "code": 6099,
       "name": "CantLiquidatePerpetualBonds",
       "msg": "CantLiquidatePerpetualBonds"
     },
     {
-      "code": 6189,
+      "code": 6100,
       "name": "CantRepayExpiredReceivingCollateralLoan",
       "msg": "CantRepayExpiredReceivingCollateralLoan"
     },
     {
-      "code": 6190,
+      "code": 6101,
       "name": "DisabledPairsWithMoreThanOneOrder",
       "msg": "DisabledPairsWithMoreThanOneOrder"
     },
     {
-      "code": 6191,
+      "code": 6102,
       "name": "CollectionIsDisabled",
       "msg": "CollectionIsDisabled"
     },
     {
-      "code": 6192,
+      "code": 6103,
       "name": "ShouldBeEscrow",
       "msg": "ShouldBeEscrow"
     },
     {
-      "code": 6193,
+      "code": 6104,
       "name": "EscrowLoansNotSupported",
       "msg": "EscrowLoansNotSupported"
     },
     {
-      "code": 6194,
+      "code": 6105,
       "name": "OnlyBanxIsSupportedForStaking",
       "msg": "OnlyBanxIsSupportedForStaking"
     },
     {
-      "code": 6195,
+      "code": 6106,
       "name": "UserDoesntOwnStake",
       "msg": "UserDoesntOwnStake"
     },
     {
-      "code": 6196,
+      "code": 6107,
       "name": "BanxIsNotStaked",
       "msg": "BanxIsNotStaked"
     },
     {
-      "code": 6197,
+      "code": 6108,
       "name": "CantUnstakeLoanedBanx",
       "msg": "CantUnstakeLoanedBanx"
     },
     {
-      "code": 6198,
+      "code": 6109,
       "name": "WrongCollateralTokenAccount",
       "msg": "WrongCollateralTokenAccount"
     },
     {
-      "code": 6199,
+      "code": 6110,
       "name": "WrongNftMint",
       "msg": "WrongNftMint"
     },
     {
-      "code": 6200,
+      "code": 6111,
       "name": "CantUnstakeWithActiveSubscriptions",
       "msg": "CantUnstakeWithActiveSubscriptions"
     },
     {
-      "code": 6201,
+      "code": 6112,
       "name": "AdventureDoesntLayOnCurve",
       "msg": "AdventureDoesntLayOnCurve"
     },
     {
-      "code": 6202,
+      "code": 6113,
       "name": "CantSubscribeToPassedWeek",
       "msg": "CantSubscribeToPassedWeek"
     },
     {
-      "code": 6203,
+      "code": 6114,
       "name": "CantHaveMoreThanThreeSubscriptions",
       "msg": "CantHaveMoreThanThreeSubscriptions"
     },
     {
-      "code": 6204,
+      "code": 6115,
       "name": "CantSubscribeMoreThanThreeWeeksAhead",
       "msg": "CantSubscribeMoreThanThreeWeeksAhead"
     },
     {
-      "code": 6205,
+      "code": 6116,
       "name": "CantUnsubscribeFromPassedAdventureNeedToHarvest",
       "msg": "CantUnsubscribeFromPassedAdventureNeedToHarvest"
     },
     {
-      "code": 6206,
+      "code": 6117,
       "name": "AlreadyUnsubscribedOrHarvested",
       "msg": "AlreadyUnsubscribedOrHarvested"
     },
     {
-      "code": 6207,
+      "code": 6118,
       "name": "CantHarvestNotEndedAdventures",
       "msg": "CantHarvestNotEndedAdventures"
     },
     {
-      "code": 6208,
+      "code": 6119,
       "name": "SubscriptionDoesntMatchAdventure",
       "msg": "SubscriptionDoesntMatchAdventure"
     },
     {
-      "code": 6209,
+      "code": 6120,
       "name": "RefinanceAuctionNotStartedYet",
       "msg": "RefinanceAuctionNotStartedYet"
     },
     {
-      "code": 6210,
+      "code": 6121,
       "name": "AdventureSubscriptionPdaIsIncorrect",
       "msg": "AdventureSubscriptionPdaIsIncorrect"
     },
     {
-      "code": 6211,
+      "code": 6122,
       "name": "BanxIsAlreadyLoaned",
       "msg": "BanxIsAlreadyLoaned"
     },
     {
-      "code": 6212,
+      "code": 6123,
       "name": "CantStandartRepayStakedBanx",
       "msg": "CantStandartRepayStakedBanx"
     },
     {
-      "code": 6213,
+      "code": 6124,
       "name": "StakeDoesntBelongToBond",
       "msg": "StakeDoesntBelongToBond"
     },
     {
-      "code": 6214,
+      "code": 6125,
       "name": "FirstAdventureNotFound",
       "msg": "FirstAdventureNotFound"
     },
     {
-      "code": 6215,
+      "code": 6126,
       "name": "BanxUserIsntFbondIssuer",
       "msg": "BanxUserIsntFbondIssuer"
     },
     {
-      "code": 6216,
+      "code": 6127,
       "name": "ConstantBidCapExceeded",
       "msg": "ConstantBidCapExceeded"
     },
     {
-      "code": 6217,
+      "code": 6128,
       "name": "TotalLoanValueIsMoreThanMaxOfferValue",
       "msg": "TotalLoanValueIsMoreThanMaxOfferValue"
     },
     {
-      "code": 6218,
+      "code": 6129,
       "name": "NeedToRepayAllTradeTransactions",
       "msg": "NeedToRepayAllTradeTransactions"
     },
     {
-      "code": 6219,
+      "code": 6130,
       "name": "SubscriptionDoesntBelongToStake",
       "msg": "SubscriptionDoesntBelongToStake"
     },
     {
-      "code": 6220,
+      "code": 6131,
       "name": "OnlyMerkleTreeWhitelistTypeAllowedForCnft",
       "msg": "OnlyMerkleTreeWhitelistTypeAllowedForCnft"
     },
     {
-      "code": 6221,
+      "code": 6132,
       "name": "BanxIsNotCnft",
       "msg": "BanxIsNotCnft"
     },
     {
-      "code": 6222,
+      "code": 6133,
       "name": "OnlyPerpetualMarketsAreSupported",
       "msg": "OnlyPerpetualMarketsAreSupported"
     },
     {
-      "code": 6223,
+      "code": 6134,
       "name": "UserDoesntOwnHadomarket",
       "msg": "UserDoesntOwnHadomarket"
     },
     {
-      "code": 6224,
+      "code": 6135,
       "name": "TokenAccountDoentMatchUserOrToken",
       "msg": "TokenAccountDoentMatchUserOrToken"
     },
     {
-      "code": 6225,
+      "code": 6136,
       "name": "FraktBondPdaIsIncorrect",
       "msg": "FraktBondPdaIsIncorrect"
     },
     {
-      "code": 6226,
+      "code": 6137,
       "name": "FinishAllGood",
       "msg": "FinishAllGood"
     },
     {
-      "code": 6227,
+      "code": 6138,
       "name": "UserDoesntOwnLiquidatedBond",
       "msg": "UserDoesntOwnLiquidatedBond"
     },
     {
-      "code": 6228,
+      "code": 6139,
       "name": "BondTradeTransactionIsNotTerminating",
       "msg": "BondTradeTransactionIsNotTerminating"
     },
     {
-      "code": 6229,
+      "code": 6140,
       "name": "LoanIsNotLiquidatedYet",
       "msg": "LoanIsNotLiquidatedYet"
     },
     {
-      "code": 6230,
+      "code": 6141,
       "name": "TokenMintDoesntBelongBond",
       "msg": "TokenMintDoesntBelongBond"
     },
     {
-      "code": 6231,
+      "code": 6142,
       "name": "LoanIsAlreadyTerminated",
       "msg": "LoanIsAlreadyTerminated"
     },
     {
-      "code": 6232,
+      "code": 6143,
       "name": "LenderDoesntMatchTradeTxn",
       "msg": "LenderDoesntMatchTradeTxn"
     },
     {
-      "code": 6233,
+      "code": 6144,
       "name": "CanRefinanceOnlyActiveLoan",
       "msg": "CanRefinanceOnlyActiveLoan"
     },
     {
-      "code": 6234,
+      "code": 6145,
       "name": "HadoMarketDoesntMatchBond",
       "msg": "HadoMarketDoesntMatchBond"
     },
     {
-      "code": 6235,
+      "code": 6146,
       "name": "BondOfferDoesntMatchHadoMarket",
       "msg": "BondOfferDoesntMatchHadoMarket"
     },
     {
-      "code": 6236,
+      "code": 6147,
       "name": "LoanIsNotActive",
       "msg": "LoanIsNotActive"
     },
     {
-      "code": 6237,
+      "code": 6148,
       "name": "CantBorrowZero",
       "msg": "CantBorrowZero"
     },
     {
-      "code": 6238,
+      "code": 6149,
       "name": "LoanIsAlreadyLiquidated",
       "msg": "LoanIsAlreadyLiquidated"
     },
     {
-      "code": 6239,
+      "code": 6150,
       "name": "RepayFractionIsIncorrect",
       "msg": "Can't repay partial 0 or 100%+"
     },
     {
-      "code": 6240,
+      "code": 6151,
       "name": "WrongStakedBanxHadoMarket",
       "msg": "WrongStakedBanxHadoMarket"
     },
     {
-      "code": 6241,
+      "code": 6152,
       "name": "StakedBanxHadoMarket",
       "msg": "StakedBanxHadoMarket"
     },
     {
-      "code": 6242,
+      "code": 6153,
       "name": "Not63PointsBanx",
       "msg": "Not63PointsBanx"
     },
     {
-      "code": 6243,
+      "code": 6154,
       "name": "BanxStakeDoesntMatchBond",
       "msg": "BanxStakeDoesntMatchBond"
     },
     {
-      "code": 6244,
+      "code": 6155,
       "name": "BondOfferShouldBeBondingCurve",
       "msg": "BondOfferShouldBeBondingCurve"
     },
     {
-      "code": 6245,
+      "code": 6156,
       "name": "BondOfferShouldBePerpetualOffer",
       "msg": "BondOfferShouldBePerpetualOffer"
     },
     {
-      "code": 6246,
+      "code": 6157,
       "name": "ProtocolFeeReceiverIsIncorrect",
       "msg": "ProtocolFeeReceiverIsIncorrect"
     },
     {
-      "code": 6247,
+      "code": 6158,
       "name": "RoundIsNotOpen",
       "msg": "RoundIsNotOpen"
     },
     {
-      "code": 6248,
+      "code": 6159,
       "name": "RoundIsOpen",
       "msg": "RoundIsOpen"
     },
     {
-      "code": 6249,
+      "code": 6160,
       "name": "LessThenMinDeposit",
       "msg": "LessThenMinDeposit"
     },
     {
-      "code": 6250,
+      "code": 6161,
       "name": "LastRoundIsOpen",
       "msg": "LastRoundIsOpen"
     },
     {
-      "code": 6251,
+      "code": 6162,
       "name": "RoundPdaIsIncorrect",
       "msg": "RoundPdaIsIncorrect"
     },
     {
-      "code": 6252,
+      "code": 6163,
       "name": "WrongRoundNumber",
       "msg": "WrongRoundNumber"
     },
     {
-      "code": 6253,
+      "code": 6164,
       "name": "UserIsNotWinner",
       "msg": "UserIsNotWinner"
     },
     {
-      "code": 6254,
+      "code": 6165,
       "name": "RewardsAlreadyClaimed",
       "msg": "RewardsAlreadyClaimed"
     },
     {
-      "code": 6255,
+      "code": 6166,
       "name": "AddressMismatch",
       "msg": "Address Mismatch"
     },
     {
-      "code": 6256,
+      "code": 6167,
       "name": "ProgramMismatch",
       "msg": "Program Mismatch"
     },
     {
-      "code": 6257,
+      "code": 6168,
       "name": "MissingRepay",
       "msg": "Missing Repay"
     },
     {
-      "code": 6258,
+      "code": 6169,
       "name": "IncorrectOwner",
       "msg": "Incorrect Owner"
     },
     {
-      "code": 6259,
+      "code": 6170,
       "name": "IncorrectProgramAuthority",
       "msg": "Incorrect Program Authority"
     },
     {
-      "code": 6260,
+      "code": 6171,
       "name": "CannotBorrowBeforeRepay",
       "msg": "Cannot Borrow Before Repay"
     },
     {
-      "code": 6261,
+      "code": 6172,
       "name": "UnknownInstruction",
       "msg": "Unknown Instruction"
     },
     {
-      "code": 6262,
+      "code": 6173,
       "name": "ToNewBondOffer",
       "msg": "ToNewBondOffer"
     },
     {
-      "code": 6263,
+      "code": 6174,
       "name": "JackpotAlreadyClaimed",
       "msg": "JackpotAlreadyClaimed"
     },
     {
-      "code": 6264,
+      "code": 6175,
       "name": "UserDoNotHaveJackpot",
       "msg": "UserDoNotHaveJackpot"
     },
     {
-      "code": 6265,
+      "code": 6176,
       "name": "RakebackAlreadyClaimed",
       "msg": "RakebackAlreadyClaimed"
     },
     {
-      "code": 6266,
+      "code": 6177,
       "name": "RakebackLocked",
       "msg": "RakebackLocked"
     },
     {
-      "code": 6267,
+      "code": 6178,
       "name": "LastOrderIsLowerThanZero",
       "msg": "LastOrderIsLowerThanZero"
     },
     {
-      "code": 6268,
+      "code": 6179,
       "name": "OnlyLinearCurveIsSupported",
       "msg": "OnlyLinearCurveIsSupported"
     },
     {
-      "code": 6269,
+      "code": 6180,
       "name": "CantRefinanceFromSameOffer",
       "msg": "CantRefinanceFromSameOffer"
     },
     {
-      "code": 6270,
+      "code": 6181,
       "name": "CantRefinanceFromNotSameTypeOffers",
       "msg": "CantRefinanceFromNotSameTypeOffers"
     },
     {
-      "code": 6271,
+      "code": 6182,
       "name": "ReservesCantBecomeNegative",
       "msg": "Reserves are negative somehow, it's error"
     },
     {
-      "code": 6272,
+      "code": 6183,
       "name": "FacelessShouldBeMigratedInSpecialWay",
       "msg": "FacelessShouldBeMigratedInSpecialWay"
     },
     {
-      "code": 6273,
+      "code": 6184,
       "name": "OfferDoesntBelongToTradeTransaction",
       "msg": "OfferDoesntBelongToTradeTransaction"
     },
     {
-      "code": 6274,
+      "code": 6185,
       "name": "IncorrectAdditionalParticipant",
       "msg": "IncorrectAdditionalParticipant"
     },
     {
-      "code": 6275,
+      "code": 6186,
       "name": "BanxIsNotLocked",
       "msg": "BanxIsNotLocked"
     },
     {
-      "code": 6276,
+      "code": 6187,
       "name": "InstructionIsDisabled",
       "msg": "InstructionIsDisabled"
     },
     {
-      "code": 6277,
+      "code": 6188,
       "name": "WrongCreator",
       "msg": "WrongCreator"
     },
     {
-      "code": 6278,
+      "code": 6189,
       "name": "ThisUserCantRepay",
       "msg": "ThisUserCantRepay"
     },
     {
-      "code": 6279,
+      "code": 6190,
       "name": "AprIsOutOfBound",
       "msg": "AprIsOutOfBound"
     },
     {
-      "code": 6280,
+      "code": 6191,
       "name": "CanNotCallMoreThanBorrowedAmount",
       "msg": "CanNotCallMoreThanBorrowedAmount"
     },
     {
-      "code": 6281,
+      "code": 6192,
       "name": "IncorrectRedeemResult",
       "msg": "IncorrectRedeemResult"
     },
     {
-      "code": 6282,
+      "code": 6193,
       "name": "AlreadyMigrated",
       "msg": "AlreadyMigrated"
     },
     {
-      "code": 6283,
+      "code": 6194,
       "name": "WrongFbond",
       "msg": "WrongFbond"
     },
     {
-      "code": 6284,
+      "code": 6195,
       "name": "NothingToSubscribe",
       "msg": "NothingToSubscribe"
     },
     {
-      "code": 6285,
+      "code": 6196,
       "name": "BanxAdventurePdaIsIncorrect",
       "msg": "BanxAdventurePdaIsIncorrect"
     },
     {
-      "code": 6286,
+      "code": 6197,
       "name": "BanxTokensInTwoWeeksLock",
       "msg": "Banx tokens in two weeks lock"
     },
     {
-      "code": 6287,
+      "code": 6198,
       "name": "BanxAdventureInProgress",
       "msg": "Can't claim before end adventure"
     },
     {
-      "code": 6288,
+      "code": 6199,
       "name": "MaxTokensStaked",
       "msg": "Max amount of tokens staked"
     },
     {
-      "code": 6289,
+      "code": 6200,
       "name": "WrongVaultTokenAccount",
       "msg": "Wrong vault token account"
     },
     {
-      "code": 6290,
+      "code": 6201,
       "name": "WrongBondOfferBondingType",
       "msg": "Wrong bond offer bonding type"
     },
     {
-      "code": 6291,
+      "code": 6202,
       "name": "InvalidLendingTokenMint",
       "msg": "InvalidLendingTokenMint"
     },
     {
-      "code": 6292,
+      "code": 6203,
       "name": "NotBorrowerListing",
       "msg": "Not borrower listing"
     },
     {
-      "code": 6293,
+      "code": 6204,
       "name": "TerminationFreezePeriod",
       "msg": "TerminationFreezePeriod"
     },
     {
-      "code": 6294,
+      "code": 6205,
       "name": "NotSplToken",
       "msg": "NotSplToken"
     },
     {
-      "code": 6295,
+      "code": 6206,
       "name": "NotWhitelistedSplForThisMarket",
       "msg": "NotWhitelistedSplForThisMarket"
     }
